@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kobus\\Documents\\CMPG 323\\Part 2\\Project\\WebGallery\\LOGIC\\LOGIC.csproj",
+      "projectUniqueName": "C:\\Users\\kobus\\Documents\\GitHub\\Gallery-web-app\\LOGIC\\LOGIC.csproj",
       "projectName": "LOGIC",
-      "projectPath": "C:\\Users\\kobus\\Documents\\CMPG 323\\Part 2\\Project\\WebGallery\\LOGIC\\LOGIC.csproj",
+      "projectPath": "C:\\Users\\kobus\\Documents\\GitHub\\Gallery-web-app\\LOGIC\\LOGIC.csproj",
       "packagesPath": "C:\\Users\\kobus\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kobus\\Documents\\CMPG 323\\Part 2\\Project\\WebGallery\\LOGIC\\obj\\",
+      "outputPath": "C:\\Users\\kobus\\Documents\\GitHub\\Gallery-web-app\\LOGIC\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

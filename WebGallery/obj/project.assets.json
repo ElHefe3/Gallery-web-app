@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kobus\\Documents\\CMPG 323\\Part 2\\Project\\WebGallery\\WebGallery\\WebGallery.csproj",
+      "projectUniqueName": "C:\\Users\\kobus\\Documents\\GitHub\\Gallery-web-app\\WebGallery\\WebGallery.csproj",
       "projectName": "WebGallery",
-      "projectPath": "C:\\Users\\kobus\\Documents\\CMPG 323\\Part 2\\Project\\WebGallery\\WebGallery\\WebGallery.csproj",
+      "projectPath": "C:\\Users\\kobus\\Documents\\GitHub\\Gallery-web-app\\WebGallery\\WebGallery.csproj",
       "packagesPath": "C:\\Users\\kobus\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kobus\\Documents\\CMPG 323\\Part 2\\Project\\WebGallery\\WebGallery\\obj\\",
+      "outputPath": "C:\\Users\\kobus\\Documents\\GitHub\\Gallery-web-app\\WebGallery\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
