@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using DAL.Entities;
 
 namespace DAL.DataContext
 {
@@ -27,6 +28,16 @@ namespace DAL.DataContext
         public static OptionsBuild ops = new OptionsBuild();
 
         public DatabaseContext(DbContextOptions<DatabaseContext> options): base(options) { }
+
+        public DbSet<Album> Albums { get; set; }
+        public DbSet<Image> Images { get; set; }
+        public DbSet<Permission> Permissions { get; set; }
+        public DbSet<User> Users { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            
+        }
     }
 
     
