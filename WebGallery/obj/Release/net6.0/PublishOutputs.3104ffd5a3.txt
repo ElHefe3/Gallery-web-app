@@ -1,0 +1,7 @@
+C:\Users\kobus\Documents\CMPG 323\Part 2\Project\WebGallery\WebGallery\obj\Release\net6.0\PubTmp\Out\WebGallery.exe
+C:\Users\kobus\Documents\CMPG 323\Part 2\Project\WebGallery\WebGallery\obj\Release\net6.0\PubTmp\Out\appsettings.Development.json
+C:\Users\kobus\Documents\CMPG 323\Part 2\Project\WebGallery\WebGallery\obj\Release\net6.0\PubTmp\Out\appsettings.json
+C:\Users\kobus\Documents\CMPG 323\Part 2\Project\WebGallery\WebGallery\obj\Release\net6.0\PubTmp\Out\WebGallery.dll
+C:\Users\kobus\Documents\CMPG 323\Part 2\Project\WebGallery\WebGallery\obj\Release\net6.0\PubTmp\Out\WebGallery.deps.json
+C:\Users\kobus\Documents\CMPG 323\Part 2\Project\WebGallery\WebGallery\obj\Release\net6.0\PubTmp\Out\WebGallery.runtimeconfig.json
+C:\Users\kobus\Documents\CMPG 323\Part 2\Project\WebGallery\WebGallery\obj\Release\net6.0\PubTmp\Out\WebGallery.pdb
