@@ -34,6 +34,7 @@ namespace DAL.DataContext
         public DbSet<Permission> Permissions { get; set; }
         public DbSet<User> Users { get; set; }
 
+        //todo:mapping
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             
