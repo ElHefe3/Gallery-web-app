@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kobus\\Source\\Repos\\ElHefe3\\Gallery-web-app\\Gallery-Project\\Gallery-Project.csproj": {}
+    "X:\\Gallery-Project\\Gallery-Project.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kobus\\Source\\Repos\\ElHefe3\\Gallery-web-app\\Gallery-Project\\Gallery-Project.csproj": {
+    "X:\\Gallery-Project\\Gallery-Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kobus\\Source\\Repos\\ElHefe3\\Gallery-web-app\\Gallery-Project\\Gallery-Project.csproj",
+        "projectUniqueName": "X:\\Gallery-Project\\Gallery-Project.csproj",
         "projectName": "Gallery-Project",
-        "projectPath": "C:\\Users\\kobus\\Source\\Repos\\ElHefe3\\Gallery-web-app\\Gallery-Project\\Gallery-Project.csproj",
-        "packagesPath": "C:\\Users\\kobus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kobus\\Source\\Repos\\ElHefe3\\Gallery-web-app\\Gallery-Project\\obj\\",
+        "projectPath": "X:\\Gallery-Project\\Gallery-Project.csproj",
+        "packagesPath": "C:\\Users\\Bernie Nel\\.nuget\\packages\\",
+        "outputPath": "X:\\Gallery-Project\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\kobus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Bernie Nel\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
