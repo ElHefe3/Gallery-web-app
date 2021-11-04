@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TjRO/0doYkmm2RpFH6Px7c+T7j07qKFnZ8FdbB3xj8UwzOWRsxNziZLSCCilNyNbLz9OJWFWaey5MLmtWoEnPQ==",
+  "dgSpecHash": "Ijlm0rqB9WRM+pAFDAqHU47bk82sgD33QpjDT4ulFeIktlBGEr8fwyZRQf9YoQtTkAV0DC2tIEAQkCvpQdFbIw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\kobus\\Documents\\GitHub\\Gallery-web-app\\DAL\\DAL.csproj",
+  "projectFilePath": "X:\\DAL\\DAL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kobus\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\kobus\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

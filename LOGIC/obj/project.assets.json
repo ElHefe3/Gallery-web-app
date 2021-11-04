@@ -7510,11 +7510,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kobus\\Documents\\GitHub\\Gallery-web-app\\LOGIC\\LOGIC.csproj",
+      "projectUniqueName": "X:\\LOGIC\\LOGIC.csproj",
       "projectName": "LOGIC",
-      "projectPath": "C:\\Users\\kobus\\Documents\\GitHub\\Gallery-web-app\\LOGIC\\LOGIC.csproj",
+      "projectPath": "X:\\LOGIC\\LOGIC.csproj",
       "packagesPath": "C:\\Users\\kobus\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kobus\\Documents\\GitHub\\Gallery-web-app\\LOGIC\\obj\\",
+      "outputPath": "X:\\LOGIC\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -7535,8 +7535,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\kobus\\Documents\\GitHub\\Gallery-web-app\\DAL\\DAL.csproj": {
-              "projectPath": "C:\\Users\\kobus\\Documents\\GitHub\\Gallery-web-app\\DAL\\DAL.csproj"
+            "X:\\DAL\\DAL.csproj": {
+              "projectPath": "X:\\DAL\\DAL.csproj"
             }
           }
         }
