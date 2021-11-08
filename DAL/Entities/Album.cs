@@ -8,5 +8,8 @@ namespace DAL.Entities
 {
     public class Album
     {
+        public int Album_ID { get; set; }
+        public string Album_Name { get; set; }
+        public string Album_Description { get; set; }
     }
 }
