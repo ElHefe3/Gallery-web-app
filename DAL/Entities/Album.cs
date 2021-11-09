@@ -11,5 +11,7 @@ namespace DAL.Entities
         public int Album_ID { get; set; }
         public string Album_Name { get; set; }
         public string Album_Description { get; set; }
+
+        public ICollection<Image> Images { get; set; }
     }
 }
