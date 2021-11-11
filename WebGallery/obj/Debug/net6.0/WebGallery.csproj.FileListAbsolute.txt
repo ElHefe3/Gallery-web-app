@@ -25,3 +25,30 @@ C:\Users\kobus\Documents\CMPG 323\Part 2\Project\WebGallery\WebGallery\obj\Debug
 C:\Users\kobus\Documents\CMPG 323\Part 2\Project\WebGallery\WebGallery\obj\Debug\net6.0\ref\WebGallery.dll
 C:\Users\kobus\Documents\CMPG 323\Part 2\Project\WebGallery\WebGallery\obj\Debug\net6.0\WebGallery.pdb
 C:\Users\kobus\Documents\CMPG 323\Part 2\Project\WebGallery\WebGallery\obj\Debug\net6.0\WebGallery.genruntimeconfig.cache
+X:\WebGallery\bin\Debug\net6.0\appsettings.Development.json
+X:\WebGallery\bin\Debug\net6.0\appsettings.json
+X:\WebGallery\bin\Debug\net6.0\WebGallery.staticwebassets.runtime.json
+X:\WebGallery\bin\Debug\net6.0\WebGallery.exe
+X:\WebGallery\bin\Debug\net6.0\WebGallery.deps.json
+X:\WebGallery\bin\Debug\net6.0\WebGallery.runtimeconfig.json
+X:\WebGallery\bin\Debug\net6.0\WebGallery.dll
+X:\WebGallery\bin\Debug\net6.0\ref\WebGallery.dll
+X:\WebGallery\bin\Debug\net6.0\WebGallery.pdb
+X:\WebGallery\obj\Debug\net6.0\WebGallery.GlobalUsings.g.cs
+X:\WebGallery\obj\Debug\net6.0\WebGallery.csproj.AssemblyReference.cache
+X:\WebGallery\obj\Debug\net6.0\WebGallery.GeneratedMSBuildEditorConfig.editorconfig
+X:\WebGallery\obj\Debug\net6.0\WebGallery.AssemblyInfoInputs.cache
+X:\WebGallery\obj\Debug\net6.0\WebGallery.AssemblyInfo.cs
+X:\WebGallery\obj\Debug\net6.0\WebGallery.csproj.CoreCompileInputs.cache
+X:\WebGallery\obj\Debug\net6.0\WebGallery.MvcApplicationPartsAssemblyInfo.cache
+X:\WebGallery\obj\Debug\net6.0\WebGallery.RazorAssemblyInfo.cache
+X:\WebGallery\obj\Debug\net6.0\WebGallery.RazorAssemblyInfo.cs
+X:\WebGallery\obj\Debug\net6.0\staticwebassets.build.json
+X:\WebGallery\obj\Debug\net6.0\staticwebassets.development.json
+X:\WebGallery\obj\Debug\net6.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
+X:\WebGallery\obj\Debug\net6.0\scopedcss\bundle\WebGallery.styles.css
+X:\WebGallery\obj\Debug\net6.0\scopedcss\projectbundle\WebGallery.bundle.scp.css
+X:\WebGallery\obj\Debug\net6.0\WebGallery.dll
+X:\WebGallery\obj\Debug\net6.0\ref\WebGallery.dll
+X:\WebGallery\obj\Debug\net6.0\WebGallery.pdb
+X:\WebGallery\obj\Debug\net6.0\WebGallery.genruntimeconfig.cache

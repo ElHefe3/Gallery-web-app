@@ -14,18 +14,18 @@ namespace DAL.DataContext
         {
             public OptionsBuild()
             {
-                settings = new AppConfiguration();
+                Settings = new AppConfiguration();
                 OptionsBuilder = new DbContextOptionsBuilder<DatabaseContext>();
-                OptionsBuilder.UseSqlServer(settings.SqlConnectionString);
+                OptionsBuilder.UseSqlServer(Settings.SqlConnectionString);
                 DatabaseOptions = OptionsBuilder.Options;
             }
 
             public DbContextOptionsBuilder<DatabaseContext> OptionsBuilder { get; set; }
             public DbContextOptions<DatabaseContext> DatabaseOptions { get; set; }
-            private AppConfiguration settings { get; set; }
+            private AppConfiguration Settings { get; set; }
         }
 
-        public static OptionsBuild ops = new OptionsBuild();
+        public static OptionsBuild Options = new OptionsBuild();
 
         public DatabaseContext(DbContextOptions<DatabaseContext> options): base(options) { }
 
