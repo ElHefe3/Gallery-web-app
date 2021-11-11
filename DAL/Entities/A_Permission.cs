@@ -11,7 +11,7 @@ namespace DAL.Entities
         public int A_Permission_ID { get; set; }
         public int Album_ID { get; set; }
         public int User_ID { get; set; }
-        public string A_Permission_Typpe { get; set; }
+        public String A_Permission_Typpe { get; set; }
 
         public Album Album { get; set; }
 

@@ -11,7 +11,7 @@ namespace DAL.Entities
         public int I_Permission_ID { get; set; }
         public int Image_ID { get; set; }
         public int User_ID { get; set; }
-        public string I_Permission_Type { get; set; }
+        public String I_Permission_Type { get; set; }
 
         public Image Image { get; set; }
 
