@@ -26,4 +26,8 @@
     <ProjectReference Include="..\WebGallery\WebGallery.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Functions\Specific\" />
+  </ItemGroup>
+
 </Project>
