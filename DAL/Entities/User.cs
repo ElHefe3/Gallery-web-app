@@ -8,5 +8,16 @@ namespace DAL.Entities
 {
     public class User
     {
+        public int User_ID { get; set; }
+        public string User_Name { get; set;}
+        public string User_Surname { get; set; }
+        public string User_Email { get; set;}
+        public string User_Nickname { get; set; }
+        public string Passwordd_Hash { get; set; } //review data type
+
+        public ICollection<I_Permission> I_Permissions { get; set; }
+
+        public ICollection<A_Permission> A_Permissions { get; set; }
+        
     }
 }

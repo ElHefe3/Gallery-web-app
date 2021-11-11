@@ -7,6 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Functions\Specific\**" />
+    <EmbeddedResource Remove="Functions\Specific\**" />
+    <None Remove="Functions\Specific\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.11" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.11">
       <PrivateAssets>all</PrivateAssets>
@@ -24,10 +30,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\WebGallery\WebGallery.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Functions\Specific\" />
   </ItemGroup>
 
 </Project>

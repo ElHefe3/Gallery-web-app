@@ -31,7 +31,7 @@ namespace DAL.DataContext
 
         public DbSet<Album> Albums { get; set; }
         public DbSet<Image> Images { get; set; }
-        public DbSet<Permission> Permissions { get; set; }
+        public DbSet<I_Permission> Permissions { get; set; }
         public DbSet<User> Users { get; set; }
 
         //todo:mapping
