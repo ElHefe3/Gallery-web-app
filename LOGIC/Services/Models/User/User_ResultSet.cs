@@ -8,16 +8,16 @@ namespace LOGIC.Services.Models.User
 {
     public class User_ResultSet
     {
-        public int user_id { get; set; } //PK
-        public String user_name { get; set; }
-        public String user_surname { get; set; }
-        public String user_email { get; set; }
-        public String user_nickname { get; set; }
-        public String password_hash { get; set; } //review data type
 
-        public ICollection<I_Permission> i_permissions { get; set; }
+        public int User_ID { get; set; }
+        public String User_Name { get; set; }
+        public String User_Surname { get; set; }
+        public String User_Email { get; set; }
+        public String User_Nickname { get; set; }
+        public String Password_Hash { get; set; } //review data type
 
-        public ICollection<A_Permission> i_permissions { get; set; }
+        public ICollection<I_Permission> I_Permissions { get; set; }
 
+        public ICollection<A_Permission> A_Permissions { get; set; }
     }
 }
