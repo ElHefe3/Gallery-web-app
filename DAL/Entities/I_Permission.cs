@@ -13,8 +13,8 @@ namespace DAL.Entities
         public int User_ID { get; set; }
         public String I_Permission_Type { get; set; }
 
-        public Image Image { get; set; }
+        public Image Image { get; set; } //BN Comment - why add this??
 
-        public User User { get; set; }
+        public User User { get; set; } //BN Comment - why add this??
     }
 }

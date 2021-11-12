@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace LOGIC.Services.Models.Album
 {
-    internal class Album_ResultSet
+    public class Album_ResultSet
     {
+        public int Album_ID { get; set; }
+        public String Album_Name { get; set; }
+        public String Album_Description { get; set; }
+        public ICollection<Image> Images { get; set; }
     }
 }
