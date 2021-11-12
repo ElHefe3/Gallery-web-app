@@ -8,10 +8,10 @@ namespace LOGIC.Services.Models.I_Permission
 {
     public class I_Permission_ResultSet
     {
-        public int I_Permission_ID { get; set; }
-        public int Image_ID { get; set; }
-        public int User_ID { get; set; }
-        public String I_Permission_Type { get; set; }
+        public int i_permission_id { get; set; }
+        public int image_id { get; set; }
+        public int user_id { get; set; }
+        public String i_permission_type { get; set; }
 
        // public Image Image { get; set; } //BN Comment - why add this??
 
