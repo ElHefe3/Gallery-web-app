@@ -25,7 +25,7 @@ namespace DAL.DataContext
             private AppConfiguration settings { get; set; }
         }
 
-        public static OptionsBuild ops = new OptionsBuild();
+        public static OptionsBuild Options = new OptionsBuild();
 
         public DatabaseContext(DbContextOptions<DatabaseContext> options): base(options) { }
 

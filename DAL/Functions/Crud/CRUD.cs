@@ -8,7 +8,6 @@ using DAL.DataContext;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
 using DAL.Functions.Interfaces;
 
 namespace DAL.Functions.Crud
@@ -32,7 +31,7 @@ namespace DAL.Functions.Crud
             }
         }
 
-        public Task<bool> Delete<T>(long entityId) where T : class
+        public async Task<bool> Delete<T>(long entityId) where T : class
         {
             try
             {
@@ -54,7 +53,7 @@ namespace DAL.Functions.Crud
             }
         }
 
-        public Task<T> Read<T>(long entityId) where T : class
+        public async Task<T> Read<T>(long entityId) where T : class
         {
             try
             {
@@ -70,7 +69,7 @@ namespace DAL.Functions.Crud
             }
         }
 
-        public Task<List<T>> ReadAll<T>() where T : class
+        public async Task<List<T>> ReadAll<T>() where T : class
         {
             try
             {
@@ -86,7 +85,7 @@ namespace DAL.Functions.Crud
             }
         }
 
-        public Task<T> Update<T>(T objectToUpdate, long entityId) where T : class
+        public async Task<T> Update<T>(T objectToUpdate, long entityId) where T : class
         {
             try
             {
