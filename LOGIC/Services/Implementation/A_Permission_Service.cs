@@ -21,7 +21,7 @@ namespace LOGIC.Services.Implementation
         //Refernce to crud functions
         private ICRUD _crud = new CRUD();
 
-        public async Task<Generic_ResultSet<A_Permission_ResultSet>> AddSingleA_Permission(int a_permission_id, int album_id, int user_id, string a_permission_type)
+        public async Task<Generic_ResultSet<A_Permission_ResultSet>> AddSingleA_Permission(int album_id, int user_id, string a_permission_type)
         {
             Generic_ResultSet<A_Permission_ResultSet> result = new Generic_ResultSet<A_Permission_ResultSet>();
             
@@ -30,7 +30,6 @@ namespace LOGIC.Services.Implementation
                 //INIT NEW DB ENTITY OF A_Permission
                 A_Permission A_Permission = new A_Permission
                 {
-                    A_Permission_ID = a_permission_id,
                     Album_ID = album_id,
                     User_ID = user_id,
                     A_Permission_Type = a_permission_type
@@ -44,7 +43,11 @@ namespace LOGIC.Services.Implementation
                 //MANUAL MAPPING OF RETURNED A_Permission VALUES TO OUR A_Permission_ResultSet
                 A_Permission_ResultSet a_permissionAdded = new A_Permission_ResultSet
                 {
-                    ////////////////SEE TUTORIAL VIDEO
+                    a_permission_id = A_Permission.A_Permission_ID,
+                    album_id = A_Permission.Album_ID,
+                    user_id = A_Permission.User_ID,
+                    a_permission_type = A_Permission.A_Permission_Type
+
                 };
 
                 //SET SUCCESSFUL RESULT VALUES
@@ -119,7 +122,10 @@ namespace LOGIC.Services.Implementation
                 //MANUAL MAPPING OF RETURNED A_Permission VALUES TO OUR A_Permission_ResultSet
                 A_Permission_ResultSet a_permissionUpdated = new A_Permission_ResultSet
                 {
-                    ////////////////SEE TUTORIAL VIDEO
+                    a_permission_id = A_Permission.A_Permission_ID,
+                    album_id = A_Permission.Album_ID,
+                    user_id = A_Permission.User_ID,
+                    a_permission_type = A_Permission.A_Permission_Type
                 };
 
                 //SET SUCCESSFUL RESULT VALUES

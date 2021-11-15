@@ -15,9 +15,9 @@ namespace DAL.Entities
         public String? User_Nickname { get; set; }
         public String? Password_Hash { get; set; } //review data type
 
-        public ICollection<I_Permission>? I_Permissions { get; set; }
+      //  public ICollection<I_Permission>? I_Permissions { get; set; }
 
-        public ICollection<A_Permission>? A_Permissions { get; set; }
+      //  public ICollection<A_Permission>? A_Permissions { get; set; }
         
     }
 }

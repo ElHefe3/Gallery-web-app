@@ -21,7 +21,7 @@ namespace LOGIC.Services.Implementation
         //Refernce to crud functions
         private ICRUD _crud = new CRUD();
 
-        public async Task<Generic_ResultSet<I_Permission_ResultSet>> AddSingleI_Permission(int i_permission_id, int image_id, int user_id, string i_permission_type)
+        public async Task<Generic_ResultSet<I_Permission_ResultSet>> AddSingleI_Permission(int image_id, int user_id, string i_permission_type)
         {
             Generic_ResultSet<I_Permission_ResultSet> result = new Generic_ResultSet<I_Permission_ResultSet>();
             try
@@ -29,7 +29,6 @@ namespace LOGIC.Services.Implementation
                 //INIT NEW DB ENTITY OF I_Permission
                 I_Permission I_Permission = new I_Permission
                 {
-                    I_Permission_ID = i_permission_id,
                     Image_ID = image_id,
                     User_ID = user_id,
                     I_Permission_Type = i_permission_type
@@ -43,7 +42,11 @@ namespace LOGIC.Services.Implementation
                 //MANUAL MAPPING OF RETURNED I_Permission VALUES TO OUR I_Permission_ResultSet
                 I_Permission_ResultSet i_permissionAdded = new I_Permission_ResultSet
                 {
-                    ////////////////SEE TUTORIAL VIDEO
+                    i_permission_id = I_Permission.I_Permission_ID,
+                    image_id = I_Permission.Image_ID,
+                    user_id = I_Permission.User_ID,
+                    i_permission_type = I_Permission.I_Permission_Type
+
                 };
 
                 //SET SUCCESSFUL RESULT VALUES
@@ -118,7 +121,10 @@ namespace LOGIC.Services.Implementation
                 //MANUAL MAPPING OF RETURNED I_Permission VALUES TO OUR I_Permission_ResultSet
                 I_Permission_ResultSet i_permissionUpdated = new I_Permission_ResultSet
                 {
-                    ////////////////SEE TUTORIAL VIDEO
+                    i_permission_id = I_Permission.I_Permission_ID,
+                    image_id = I_Permission.Image_ID,
+                    user_id = I_Permission.User_ID,
+                    i_permission_type = I_Permission.I_Permission_Type
                 };
 
                 //SET SUCCESSFUL RESULT VALUES

@@ -21,7 +21,7 @@ namespace LOGIC.Services.Implementation
         //Refernce to crud functions
         private ICRUD _crud = new CRUD();
 
-        public async Task<Generic_ResultSet<Album_ResultSet>> AddSingleAlbum(int album_id, string album_name, string album_description, ICollection<Image> images)
+        public async Task<Generic_ResultSet<Album_ResultSet>> AddSingleAlbum( string album_name, string album_description)
         {
             Generic_ResultSet<Album_ResultSet> result = new Generic_ResultSet<Album_ResultSet>();
             try
@@ -29,11 +29,9 @@ namespace LOGIC.Services.Implementation
                 //INIT NEW DB ENTITY OF Album
                 Album Album = new Album
                 {
-                    Album_ID = album_id,
                     Album_Name = album_name,
-                    Album_Description = album_description,
-                    Images = images
-                 };
+                    Album_Description = album_description
+                };
 
                 //ADD Album TO DB
                 Album = await _crud.Create<Album>(Album);
@@ -42,7 +40,10 @@ namespace LOGIC.Services.Implementation
                 //MANUAL MAPPING OF RETURNED Album VALUES TO OUR Album_ResultSet
                 Album_ResultSet albumAdded = new Album_ResultSet
                 {
-                    ////////////////SEE TUTORIAL VIDEO
+                    album_id = Album.Album_ID,
+                    album_name = Album.Album_Name,
+                    album_description = Album.Album_Description
+                    
                 };
 
                 //SET SUCCESSFUL RESULT VALUES
@@ -97,7 +98,7 @@ namespace LOGIC.Services.Implementation
             return result;
         }
 
-        public async Task<Generic_ResultSet<Album_ResultSet>> UpdateAlbum(int album_id, string album_name, string album_description, ICollection<Image> images)
+        public async Task<Generic_ResultSet<Album_ResultSet>> UpdateAlbum(int album_id, string album_name, string album_description)
         {
             Generic_ResultSet<Album_ResultSet> result = new Generic_ResultSet<Album_ResultSet>();
             try
@@ -117,7 +118,9 @@ namespace LOGIC.Services.Implementation
                 //MANUAL MAPPING OF RETURNED Album VALUES TO OUR Album_ResultSet
                 Album_ResultSet albumUpdated = new Album_ResultSet
                 {
-                    ////////////////SEE TUTORIAL VIDEO
+                    album_id = Album.Album_ID,
+                    album_name = Album.Album_Name,
+                    album_description = Album.Album_Description
                 };
 
                 //SET SUCCESSFUL RESULT VALUES

@@ -21,21 +21,18 @@ namespace LOGIC.Services.Implementation
         //Refernce to crud functions
         private ICRUD _crud = new CRUD();
 
-        public async Task<Generic_ResultSet<User_ResultSet>> AddSingleUser(int user_id, string user_name, string user_surname, string user_email, string user_nickname, string password_hash, ICollection<I_Permission> i_permissions, ICollection<A_Permission> a_permissions  ) //double check i collection type
+        public async Task<Generic_ResultSet<User_ResultSet>> AddSingleUser(string user_name, string user_surname, string user_email, string user_nickname, string password_hash) 
         {
             Generic_ResultSet<User_ResultSet> result = new Generic_ResultSet<User_ResultSet>();
             try
             {
                 //INIT NEW DB ENTITY OF User
                 User User = new User
-                {
-                    User_ID = user_id,
+                {        
                     User_Name = user_name,
                     User_Email = user_email,
                     User_Nickname = user_nickname,
-                    User_Surname = user_surname,
-                    A_Permissions = a_permissions,
-                    I_Permissions = i_permissions
+                    User_Surname = user_surname
                 };
 
                 //ADD User TO DB
@@ -45,7 +42,11 @@ namespace LOGIC.Services.Implementation
                 //MANUAL MAPPING OF RETURNED User VALUES TO OUR User_ResultSet
                 User_ResultSet userAdded = new User_ResultSet
                 {
-                    ////////////////SEE TUTORIAL VIDEO
+                    user_id = User.User_ID,
+                    user_name = User.User_Name,
+                    user_email = User.User_Email,
+                    user_nickname = User.User_Nickname,
+                    user_surname = User.User_Surname  
                 };
 
                 //SET SUCCESSFUL RESULT VALUES
@@ -82,11 +83,7 @@ namespace LOGIC.Services.Implementation
                         user_surname = dg.User_Surname,
                         user_email = dg.User_Email,
                         user_nickname = dg.User_Nickname,
-                        password_hash = dg.Password_Hash,
-                        i_permissions = dg.I_Permissions, ///bug
-                        a_permissions = dg.A_Permissions //bug
-
-
+                        password_hash = dg.Password_Hash
                     });
                 });
 
@@ -106,7 +103,7 @@ namespace LOGIC.Services.Implementation
             return result;
         }
 
-        public async Task<Generic_ResultSet<User_ResultSet>> UpdateUser(int user_id, string user_name, string user_surname, string user_email, string user_nickname, string password_hash, ICollection<I_Permission> i_permissions, ICollection<A_Permission> a_permissions) //double check i collection type
+        public async Task<Generic_ResultSet<User_ResultSet>> UpdateUser(int user_id, string user_name, string user_surname, string user_email, string user_nickname, string password_hash) //double check i collection type
         {
             Generic_ResultSet<User_ResultSet> result = new Generic_ResultSet<User_ResultSet>();
             try
@@ -118,9 +115,7 @@ namespace LOGIC.Services.Implementation
                     User_Name = user_name,
                     User_Email = user_email,
                     User_Nickname = user_nickname,
-                    User_Surname = user_surname,
-                    A_Permissions = a_permissions,
-                    I_Permissions = i_permissions
+                    User_Surname = user_surname
                 };
 
                 //ADD User TO DB
@@ -129,7 +124,11 @@ namespace LOGIC.Services.Implementation
                 //MANUAL MAPPING OF RETURNED User VALUES TO OUR User_ResultSet
                 User_ResultSet userUpdated = new User_ResultSet
                 {
-                    ////////////////SEE TUTORIAL VIDEO
+                    user_id = User.User_ID,
+                    user_name = User.User_Name,
+                    user_email = User.User_Email,
+                    user_nickname = User.User_Nickname,
+                    user_surname = User.User_Surname
                 };
 
                 //SET SUCCESSFUL RESULT VALUES

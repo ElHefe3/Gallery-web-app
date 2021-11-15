@@ -21,7 +21,7 @@ namespace LOGIC.Services.Implementation
         //Refernce to crud functions
         private ICRUD _crud = new CRUD();
 
-        public async Task<Generic_ResultSet<Image_ResultSet>> AddSingleImage(int image_id, int album_id, string image_captured_date, string image_captured_by, string image_tags, string geolocation)
+        public async Task<Generic_ResultSet<Image_ResultSet>> AddSingleImage(int album_id, string image_captured_date, string image_captured_by, string image_tags, string geolocation)
         {
             Generic_ResultSet<Image_ResultSet> result = new Generic_ResultSet<Image_ResultSet>();
             try
@@ -29,7 +29,6 @@ namespace LOGIC.Services.Implementation
                 //INIT NEW DB ENTITY OF Image
                 Image Image = new Image
                 {
-                    Image_ID = image_id,
                     Album_ID = album_id,
                     Image_Captured_By = image_captured_by,
                     Image_Tags = image_tags,
@@ -44,7 +43,11 @@ namespace LOGIC.Services.Implementation
                 //MANUAL MAPPING OF RETURNED Image VALUES TO OUR Image_ResultSet
                 Image_ResultSet imageAdded = new Image_ResultSet
                 {
-                    ////////////////SEE TUTORIAL VIDEO
+                    image_id = Image.Image_ID,
+                    album_id = Image.Album_ID,
+                    image_captured_by = Image.Image_Captured_By,
+                    image_tags = Image.Image_Tags,
+                    geolocation = Image.Geolocation
                 };
 
                 //SET SUCCESSFUL RESULT VALUES
@@ -121,7 +124,11 @@ namespace LOGIC.Services.Implementation
                 //MANUAL MAPPING OF RETURNED Image VALUES TO OUR Image_ResultSet
                 Image_ResultSet imageUpdated = new Image_ResultSet
                 {
-                    ////////////////SEE TUTORIAL VIDEO
+                    image_id = Image.Image_ID,
+                    album_id = Image.Album_ID,
+                    image_captured_by = Image.Image_Captured_By,
+                    image_tags = Image.Image_Tags,
+                    geolocation = Image.Geolocation
                 };
 
                 //SET SUCCESSFUL RESULT VALUES
