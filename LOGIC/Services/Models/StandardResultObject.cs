@@ -13,7 +13,7 @@ namespace LOGIC.Services.Models
             success = false;
             userMessage = string.Empty;
             internalMessage = string.Empty;
-            exception = null;
+            exception = null!; //////////////////////
 
         }
 

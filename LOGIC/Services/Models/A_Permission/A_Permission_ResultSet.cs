@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DAL.Entities;
 
 namespace LOGIC.Services.Models.A_Permission
 {
@@ -15,6 +16,6 @@ namespace LOGIC.Services.Models.A_Permission
 
        // public Album Album { get; set; } //BN comment - why?
 
-       // public User User { get; set; } //BN comment - why?
+     //   public User User { get; set; } //BN comment - why?
     }
 }
