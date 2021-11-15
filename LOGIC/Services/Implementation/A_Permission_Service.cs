@@ -24,6 +24,7 @@ namespace LOGIC.Services.Implementation
         public async Task<Generic_ResultSet<A_Permission_ResultSet>> AddSingleA_Permission(int a_permission_id, int album_id, int user_id, string a_permission_type)
         {
             Generic_ResultSet<A_Permission_ResultSet> result = new Generic_ResultSet<A_Permission_ResultSet>();
+            
             try
             {
                 //INIT NEW DB ENTITY OF A_Permission
