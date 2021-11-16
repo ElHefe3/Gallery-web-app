@@ -2187,8 +2187,7 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.11",
           "Microsoft.EntityFrameworkCore.SqlServer.Design": "1.1.6",
           "Microsoft.Extensions.Configuration": "5.0.0",
-          "Microsoft.Extensions.Configuration.Json": "5.0.0",
-          "WebGallery": "1.0.0"
+          "Microsoft.Extensions.Configuration.Json": "5.0.0"
         },
         "compile": {
           "bin/placeholder/DAL.dll": {}
@@ -2196,19 +2195,6 @@
         "runtime": {
           "bin/placeholder/DAL.dll": {}
         }
-      },
-      "WebGallery/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/WebGallery.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/WebGallery.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
       }
     }
   },
@@ -7491,11 +7477,6 @@
       "type": "project",
       "path": "../DAL/DAL.csproj",
       "msbuildProject": "../DAL/DAL.csproj"
-    },
-    "WebGallery/1.0.0": {
-      "type": "project",
-      "path": "../WebGallery/WebGallery.csproj",
-      "msbuildProject": "../WebGallery/WebGallery.csproj"
     }
   },
   "projectFileDependencyGroups": {

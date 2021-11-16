@@ -39,20 +39,36 @@ namespace WEB_API.Controllers
             }
         }
 
-     //   [HttpGet]
-    //    [Route("[action]")]
-     //   public async Task<IActionResult> GetUserById(int id)
-     //   {
-     //       var result = await _user_Service.GetserById(id);
-     //       switch (result.success)
-     //       {
-     //           case true:
-     //               return Ok(result);
-     //
-     //           case false:
-      //              return StatusCode(500, result);
-     //       }
-     //   }
+        //   [HttpGet]
+        //    [Route("[action]")]
+        //   public async Task<IActionResult> GetUserById(int id)
+        //   {
+        //       var result = await _user_Service.GetserById(id);
+        //       switch (result.success)
+        //       {
+        //           case true:
+        //               return Ok(result);
+        //
+        //           case false:
+        //              return StatusCode(500, result);
+        //       }
+        //   }
+
+
+        [HttpGet]
+        [Route("[action]")]
+        public async Task<IActionResult> GetAllUsers()
+        {
+            var result = await _user_Service.GetAllUsers();
+            switch (result.success)
+            {
+                case true:
+                    return Ok(result);
+
+                case false:
+                    return StatusCode(500, result);
+            }
+        }
 
         [HttpPost]
         [Route("[action]")]

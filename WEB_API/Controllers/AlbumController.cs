@@ -27,7 +27,7 @@ namespace WEB_API.Controllers
         [HttpPost]
         [Route("[action]")]
         public async Task<IActionResult> AddAlbum(Album_Pass_Object album)
-        {                                                                                             
+        {
             var result = await _album_Service.AddSingleAlbum(album.album_name, album.album_description);
             switch (result.success)
             {

@@ -2216,19 +2216,6 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
-      },
-      "WebGallery/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/WebGallery.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/WebGallery.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
       }
     }
   },
@@ -7562,11 +7549,6 @@
         "system.xml.xmlserializer.4.3.0.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
-    },
-    "WebGallery/1.0.0": {
-      "type": "project",
-      "path": "../WebGallery/WebGallery.csproj",
-      "msbuildProject": "../WebGallery/WebGallery.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -7577,8 +7559,7 @@
       "Microsoft.EntityFrameworkCore.SqlServer.Design >= 1.1.6",
       "Microsoft.EntityFrameworkCore.Tools >= 5.0.11",
       "Microsoft.Extensions.Configuration >= 5.0.0",
-      "Microsoft.Extensions.Configuration.Json >= 5.0.0",
-      "WebGallery >= 1.0.0"
+      "Microsoft.Extensions.Configuration.Json >= 5.0.0"
     ]
   },
   "packageFolders": {
@@ -7612,11 +7593,7 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {
-            "C:\\Users\\Bernie Nel\\Documents\\GitHub\\Gallery-web-app\\WebGallery\\WebGallery.csproj": {
-              "projectPath": "C:\\Users\\Bernie Nel\\Documents\\GitHub\\Gallery-web-app\\WebGallery\\WebGallery.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {

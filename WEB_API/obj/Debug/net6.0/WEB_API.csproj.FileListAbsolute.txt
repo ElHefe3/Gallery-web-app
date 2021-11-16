@@ -1,0 +1,6 @@
+C:\Users\Bernie Nel\Documents\GitHub\Gallery-web-app\WEB_API\obj\Debug\net6.0\WEB_API.csproj.AssemblyReference.cache
+C:\Users\Bernie Nel\Documents\GitHub\Gallery-web-app\WEB_API\obj\Debug\net6.0\WEB_API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Bernie Nel\Documents\GitHub\Gallery-web-app\WEB_API\obj\Debug\net6.0\WEB_API.AssemblyInfoInputs.cache
+C:\Users\Bernie Nel\Documents\GitHub\Gallery-web-app\WEB_API\obj\Debug\net6.0\WEB_API.AssemblyInfo.cs
+C:\Users\Bernie Nel\Documents\GitHub\Gallery-web-app\WEB_API\obj\Debug\net6.0\WEB_API.csproj.CoreCompileInputs.cache
+C:\Users\Bernie Nel\Documents\GitHub\Gallery-web-app\WEB_API\obj\Debug\net6.0\WEB_API.MvcApplicationPartsAssemblyInfo.cache

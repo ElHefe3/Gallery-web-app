@@ -27,7 +27,7 @@ namespace WEB_API.Controllers
         [HttpPost]
         [Route("[action]")]
         public async Task<IActionResult> AddI_Permission(I_Permission_Pass_Object i_permission)
-        {                                                                                             
+        {
             var result = await _i_permission_Service.AddSingleI_Permission(i_permission.image_id, i_permission.user_id, i_permission.i_permission_type);
             switch (result.success)
             {
@@ -58,7 +58,7 @@ namespace WEB_API.Controllers
         [Route("[action]")]
         public async Task<IActionResult> UpdateI_Permission(I_PermissionUpdate_Pass_Object i_permission)
         {
-            var result = await _i_permission_Service.UpdateI_Permission(i_permission.i_permission_id,i_permission.image_id, i_permission.user_id, i_permission.i_permission_type);
+            var result = await _i_permission_Service.UpdateI_Permission(i_permission.i_permission_id, i_permission.image_id, i_permission.user_id, i_permission.i_permission_type);
             switch (result.success)
             {
                 case true:

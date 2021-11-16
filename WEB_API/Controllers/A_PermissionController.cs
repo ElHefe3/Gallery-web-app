@@ -27,7 +27,7 @@ namespace WEB_API.Controllers
         [HttpPost]
         [Route("[action]")]
         public async Task<IActionResult> AddA_Permission(A_Permission_Pass_Object a_permission)
-        {                                                                                             
+        {
             var result = await _a_permission_Service.AddSingleA_Permission(a_permission.album_id, a_permission.user_id, a_permission.a_permission_type);
             switch (result.success)
             {

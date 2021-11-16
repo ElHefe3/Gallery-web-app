@@ -78,7 +78,7 @@ namespace LOGIC.Services.Implementation
                         album_id = dg.Album_ID,
                         album_name = dg.Album_Name,
                         album_description = dg.Album_Description,
-                        images = dg.Images //bug
+                       // images = dg.Images //bug
                     });
                 });
 
@@ -109,7 +109,7 @@ namespace LOGIC.Services.Implementation
                     Album_ID = album_id,
                     Album_Name = album_name,
                     Album_Description = album_description,
-                    Images = images
+                   // Images = images
                 };
 
                 //ADD Album TO DB
