@@ -56,7 +56,7 @@ namespace LOGIC.Services.Implementation
             {
                 //SET FAILED RESULT VALUES
                 result.exception = exception;
-                result.userMessage = "We failed to register your information for the album supplied. Please try again.";
+                result.userMessage = "We failed to register your information for the album supplied. Please try again." + exception.Message;
                 result.internalMessage = string.Format("ERROR: LOGIC.Services.Implementation.Album_Service: AddSingleAlbum(): {0}", exception.Message); ;
                 //Success by default is set to false & its always the last value we set in the try block, so we should never need to set it in the catch block.
             }
@@ -135,7 +135,7 @@ namespace LOGIC.Services.Implementation
             {
                 //SET FAILED RESULT VALUES
                 result.exception = exception;
-                result.userMessage = "We failed to update your information for the album supplied. Please try again.";
+                result.userMessage = "We failed to update your information for the album supplied. Please try again." + exception.Message;
                 result.internalMessage = string.Format("ERROR: LOGIC.Services.Implementation.UpdateAlbum: AddSingleAlbum(): {0}", exception.Message); ;
                 //Success by default is set to false & its always the last value we set in the try block, so we should never need to set it in the catch block.
             }

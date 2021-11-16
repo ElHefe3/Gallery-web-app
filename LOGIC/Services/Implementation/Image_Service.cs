@@ -51,7 +51,7 @@ namespace LOGIC.Services.Implementation
                 };
 
                 //SET SUCCESSFUL RESULT VALUES
-                result.userMessage = string.Format("The supplied image {0} was added successfully", image_id);
+                result.userMessage = string.Format("The supplied image {0} was added successfully", image_captured_by);// <<=======
                 result.internalMessage = "LOGIC.Services.Implementation.Image_Service: AddSingleImage() method executed successfully.";
                 result.result_set = imageAdded;
                 result.success = true;
@@ -60,7 +60,7 @@ namespace LOGIC.Services.Implementation
             {
                 //SET FAILED RESULT VALUES
                 result.exception = exception;
-                result.userMessage = "We failed to register your information for the image supplied. Please try again.";
+                result.userMessage = "We failed to register your information for the image supplied. Please try again." + exception.Message;
                 result.internalMessage = string.Format("ERROR: LOGIC.Services.Implementation.Image_Service: AddSingleImage(): {0}", exception.Message); ;
                 //Success by default is set to false & its always the last value we set in the try block, so we should never need to set it in the catch block.
             }
