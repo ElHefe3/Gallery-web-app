@@ -21,7 +21,7 @@ namespace LOGIC.Services.Implementation
         //Refernce to crud functions
         private ICRUD _crud = new CRUD();
 
-        public async Task<Generic_ResultSet<Image_ResultSet>> AddSingleImage(int album_id, string image_captured_date, string image_captured_by, string image_tags, string geolocation)
+        public async Task<Generic_ResultSet<Image_ResultSet>> AddSingleImage(int album_id, DateTime image_captured_date, string image_captured_by, string image_tags, string geolocation)
         {
             Generic_ResultSet<Image_ResultSet> result = new Generic_ResultSet<Image_ResultSet>();
             try
@@ -103,7 +103,7 @@ namespace LOGIC.Services.Implementation
             return result;
         }
 
-        public async Task<Generic_ResultSet<Image_ResultSet>> UpdateImage(int image_id, int album_id, string image_captured_date, string image_captured_by, string image_tags, string geolocation)
+        public async Task<Generic_ResultSet<Image_ResultSet>> UpdateImage(int image_id, int album_id, DateTime image_captured_date, string image_captured_by, string image_tags, string geolocation)
         {
             Generic_ResultSet<Image_ResultSet> result = new Generic_ResultSet<Image_ResultSet>();
             try
