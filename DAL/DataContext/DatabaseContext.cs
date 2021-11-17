@@ -75,30 +75,40 @@ namespace DAL.DataContext
             modelBuilder.Entity<Album>().Property(album => album.Album_ID).UseIdentityColumn(1, 1).IsRequired().HasColumnName("album_id");
             //COLUMN SETTINGS
             modelBuilder.Entity<Album>().Property(album => album.Album_Name).IsRequired(true).HasMaxLength(100).HasColumnName("album_name");
-            modelBuilder.Entity<Album>().Property(album => album.Album_Description).IsRequired(true).HasMaxLength(100).HasColumnName("album_description");
+            modelBuilder.Entity<Album>().Property(album => album.Album_Description).IsRequired(false).HasMaxLength(100).HasColumnName("album_description");
 
 
             //RelationShips
             modelBuilder.Entity<Album>()
                 .HasMany<A_Permission>(album => album.A_Permissions)
-                .WithOne(i_p => i_p.Album)
-                .HasForeignKey(i_p => i_p.Album_ID)
-                .OnDelete(DeleteBehavior.Restrict);//Can't delete  
+                .WithOne(a_p => a_p.Album)
+                .HasForeignKey(a_p => a_p.Album_ID)
+                .OnDelete(DeleteBehavior.Restrict);//Can't delete
+
+            modelBuilder.Entity<Album>()
+                .HasMany<Image>(album => album.Images)
+                .WithOne(image => image.Albums)
+                .HasForeignKey(image => image.Image_ID)
+                .OnDelete(DeleteBehavior.Restrict);//Can't delete 
+
             #endregion
 
 
 
 
             #region Image
-            modelBuilder.Entity<Image>().ToTable("user");
+            modelBuilder.Entity<Image>().ToTable("image");
             //Primary Key & Identity Column
             modelBuilder.Entity<Image>().HasKey(image => image.Image_ID);
             modelBuilder.Entity<Image>().Property(image => image.Image_ID).UseIdentityColumn(1, 1).IsRequired().HasColumnName("image_id");
             //COLUMN SETTINGS
-            modelBuilder.Entity<Image>().Property(image => image.Album_ID).IsRequired(true).HasMaxLength(100).HasColumnName("album_id");
-            modelBuilder.Entity<Image>().Property(image => image.Image_Captured_Date).IsRequired(true).HasDefaultValue(image_Capture_Date).HasColumnName("image_capture_date");
-            modelBuilder.Entity<Image>().Property(image => image.Image_Captured_By).IsRequired(true).HasMaxLength(100).HasColumnName("image_captured_by");
-            modelBuilder.Entity<Image>().Property(image => image.Image_Tags).IsRequired(true).HasMaxLength(100).HasColumnName("image_tags");
+            modelBuilder.Entity<Image>().Property(image => image.Album_ID).IsRequired(true).HasDefaultValue(null).HasColumnName("album_id");
+            modelBuilder.Entity<Image>().Property(image => image.Image_Name).IsRequired(true).HasMaxLength(100).HasColumnName("image_name");
+            modelBuilder.Entity<Image>().Property(image => image.Image_Captured_Date).IsRequired(true).HasDefaultValue(null).HasColumnName("image_capture_date");
+            modelBuilder.Entity<Image>().Property(image => image.Image_Captured_By).IsRequired(false).HasMaxLength(100).HasColumnName("image_captured_by");
+            modelBuilder.Entity<Image>().Property(image => image.Geolocation).IsRequired(false).HasMaxLength(100).HasColumnName("geolocation");
+            modelBuilder.Entity<Image>().Property(image => image.Image_Tags).IsRequired(false).HasMaxLength(100).HasColumnName("image_tags");
+            modelBuilder.Entity<Image>().Property(image => image.Other_Metadata).IsRequired(false).HasMaxLength(100).HasColumnName("other_metadata");
 
 
             //RelationShips
@@ -107,6 +117,14 @@ namespace DAL.DataContext
                    .WithOne(i_p => i_p.Image)
                    .HasForeignKey(i_p => i_p.Image_ID)
                    .OnDelete(DeleteBehavior.Restrict);//Can't delete 
+
+            modelBuilder.Entity<Image>()
+                .HasOne<Album>(image => image.Albums)
+                .WithMany(album => album.Images)//Image is linked to many I_Permissions
+                .HasForeignKey(image => image.Album_ID)
+                .OnDelete(DeleteBehavior.NoAction);//Can delete 
+
+
             #endregion
 
 
@@ -116,8 +134,8 @@ namespace DAL.DataContext
             modelBuilder.Entity<I_Permission>().HasKey(i_p => i_p.I_Permission_ID);
             modelBuilder.Entity<I_Permission>().Property(i_p => i_p.I_Permission_ID).UseIdentityColumn(1, 1).IsRequired().HasColumnName("i_permission_id");
             //COLUMN SETTINGS
-            modelBuilder.Entity<I_Permission>().Property(i_p => i_p.Image_ID).IsRequired(true).HasMaxLength(100).HasColumnName("image_id");
-            modelBuilder.Entity<I_Permission>().Property(i_p => i_p.User_ID).IsRequired(true).HasMaxLength(100).HasColumnName("user_id");
+            modelBuilder.Entity<I_Permission>().Property(i_p => i_p.Image_ID).IsRequired(true).HasColumnName("image_id");
+            modelBuilder.Entity<I_Permission>().Property(i_p => i_p.User_ID).IsRequired(true).HasColumnName("user_id");
             modelBuilder.Entity<I_Permission>().Property(i_p => i_p.I_Permission_Type).IsRequired(true).HasMaxLength(100).HasColumnName("i_permission_type");
 
             //RelationShips

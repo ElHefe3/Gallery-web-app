@@ -19,6 +19,10 @@ namespace DAL.Entities
 
         public ICollection<I_Permission>? I_Permissions { get; set; }
 
+        public Album? Albums { get; set; } //BN added
+
+
+
 
     }
 }
