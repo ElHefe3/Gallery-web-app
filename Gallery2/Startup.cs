@@ -31,7 +31,7 @@ namespace Gettoe_Elementary
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Gettoe_Elementary", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "WebGallery", Version = "v1" });
             });
             #region CUSTOM SERVICES [D-I]
             services.AddScoped<IA_Permission_Service, A_Permission_Service>();

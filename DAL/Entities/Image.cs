@@ -17,6 +17,8 @@ namespace DAL.Entities
         public String? Geolocation { get; set; } //review data type !!
         public String? Other_Metadata { get; set; } // lets be more specific. This could be a mojor security and pprivacy breach
 
+        public ICollection<I_Permission>? I_Permissions { get; set; }
+
 
     }
 }

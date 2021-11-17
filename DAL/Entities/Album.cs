@@ -13,5 +13,7 @@ namespace DAL.Entities
         public String? Album_Description { get; set; }
 
         public ICollection<Image>? Images { get; set; }
+
+        public ICollection<A_Permission>? A_Permissions { get; set; }
     }
 }
