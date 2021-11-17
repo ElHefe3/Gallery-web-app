@@ -175,13 +175,13 @@ namespace DAL.Migrations
                     b.Property<string>("Password_Hash")
                         .HasMaxLength(250)
                         .HasColumnType("nvarchar(250)")
-                        .HasColumnName("contact_email");
+                        .HasColumnName("user_email");
 
                     b.Property<string>("User_Email")
                         .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)")
-                        .HasColumnName("user_email");
+                        .HasColumnName("user_passwordhash");
 
                     b.Property<string>("User_Name")
                         .IsRequired()

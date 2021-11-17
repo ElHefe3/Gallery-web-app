@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DAL.Migrations
 {
     [DbContext(typeof(DatabaseContext))]
-    [Migration("20211117134044_InitDatabase")]
+    [Migration("20211117135737_InitDatabase")]
     partial class InitDatabase
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -177,13 +177,13 @@ namespace DAL.Migrations
                     b.Property<string>("Password_Hash")
                         .HasMaxLength(250)
                         .HasColumnType("nvarchar(250)")
-                        .HasColumnName("contact_email");
+                        .HasColumnName("user_email");
 
                     b.Property<string>("User_Email")
                         .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)")
-                        .HasColumnName("user_email");
+                        .HasColumnName("user_passwordhash");
 
                     b.Property<string>("User_Name")
                         .IsRequired()
