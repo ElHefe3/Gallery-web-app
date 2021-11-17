@@ -31,9 +31,9 @@ namespace DAL.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     user_name = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
                     user_surname = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
-                    user_email = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
+                    user_passwordhash = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
                     user_nickname = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
-                    contact_email = table.Column<string>(type: "nvarchar(250)", maxLength: 250, nullable: true)
+                    user_email = table.Column<string>(type: "nvarchar(250)", maxLength: 250, nullable: true)
                 },
                 constraints: table =>
                 {
