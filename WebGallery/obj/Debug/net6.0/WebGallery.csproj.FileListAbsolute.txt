@@ -25,3 +25,29 @@ C:\Users\kobus\Documents\CMPG 323\Part 2\Project\WebGallery\WebGallery\obj\Debug
 C:\Users\kobus\Documents\CMPG 323\Part 2\Project\WebGallery\WebGallery\obj\Debug\net6.0\ref\WebGallery.dll
 C:\Users\kobus\Documents\CMPG 323\Part 2\Project\WebGallery\WebGallery\obj\Debug\net6.0\WebGallery.pdb
 C:\Users\kobus\Documents\CMPG 323\Part 2\Project\WebGallery\WebGallery\obj\Debug\net6.0\WebGallery.genruntimeconfig.cache
+C:\Users\Bernie Nel\Documents\GitHub\Gallery-web-app\WebGallery\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Bernie Nel\Documents\GitHub\Gallery-web-app\WebGallery\bin\Debug\net6.0\appsettings.json
+C:\Users\Bernie Nel\Documents\GitHub\Gallery-web-app\WebGallery\bin\Debug\net6.0\WebGallery.staticwebassets.runtime.json
+C:\Users\Bernie Nel\Documents\GitHub\Gallery-web-app\WebGallery\bin\Debug\net6.0\WebGallery.exe
+C:\Users\Bernie Nel\Documents\GitHub\Gallery-web-app\WebGallery\bin\Debug\net6.0\WebGallery.deps.json
+C:\Users\Bernie Nel\Documents\GitHub\Gallery-web-app\WebGallery\bin\Debug\net6.0\WebGallery.runtimeconfig.json
+C:\Users\Bernie Nel\Documents\GitHub\Gallery-web-app\WebGallery\bin\Debug\net6.0\WebGallery.dll
+C:\Users\Bernie Nel\Documents\GitHub\Gallery-web-app\WebGallery\bin\Debug\net6.0\ref\WebGallery.dll
+C:\Users\Bernie Nel\Documents\GitHub\Gallery-web-app\WebGallery\bin\Debug\net6.0\WebGallery.pdb
+C:\Users\Bernie Nel\Documents\GitHub\Gallery-web-app\WebGallery\obj\Debug\net6.0\WebGallery.csproj.AssemblyReference.cache
+C:\Users\Bernie Nel\Documents\GitHub\Gallery-web-app\WebGallery\obj\Debug\net6.0\WebGallery.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Bernie Nel\Documents\GitHub\Gallery-web-app\WebGallery\obj\Debug\net6.0\WebGallery.AssemblyInfoInputs.cache
+C:\Users\Bernie Nel\Documents\GitHub\Gallery-web-app\WebGallery\obj\Debug\net6.0\WebGallery.AssemblyInfo.cs
+C:\Users\Bernie Nel\Documents\GitHub\Gallery-web-app\WebGallery\obj\Debug\net6.0\WebGallery.csproj.CoreCompileInputs.cache
+C:\Users\Bernie Nel\Documents\GitHub\Gallery-web-app\WebGallery\obj\Debug\net6.0\WebGallery.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Bernie Nel\Documents\GitHub\Gallery-web-app\WebGallery\obj\Debug\net6.0\WebGallery.RazorAssemblyInfo.cache
+C:\Users\Bernie Nel\Documents\GitHub\Gallery-web-app\WebGallery\obj\Debug\net6.0\WebGallery.RazorAssemblyInfo.cs
+C:\Users\Bernie Nel\Documents\GitHub\Gallery-web-app\WebGallery\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Bernie Nel\Documents\GitHub\Gallery-web-app\WebGallery\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Bernie Nel\Documents\GitHub\Gallery-web-app\WebGallery\obj\Debug\net6.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Bernie Nel\Documents\GitHub\Gallery-web-app\WebGallery\obj\Debug\net6.0\scopedcss\bundle\WebGallery.styles.css
+C:\Users\Bernie Nel\Documents\GitHub\Gallery-web-app\WebGallery\obj\Debug\net6.0\scopedcss\projectbundle\WebGallery.bundle.scp.css
+C:\Users\Bernie Nel\Documents\GitHub\Gallery-web-app\WebGallery\obj\Debug\net6.0\WebGallery.dll
+C:\Users\Bernie Nel\Documents\GitHub\Gallery-web-app\WebGallery\obj\Debug\net6.0\ref\WebGallery.dll
+C:\Users\Bernie Nel\Documents\GitHub\Gallery-web-app\WebGallery\obj\Debug\net6.0\WebGallery.pdb
+C:\Users\Bernie Nel\Documents\GitHub\Gallery-web-app\WebGallery\obj\Debug\net6.0\WebGallery.genruntimeconfig.cache

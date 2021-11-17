@@ -11,6 +11,6 @@ namespace LOGIC.Services.Models.Album
         public int album_id { get; set; }
         public String album_name { get; set; }
         public String album_description { get; set; }
-        public ICollection<Image> images { get; set; }
+       // public ICollection<Image> images { get; set; }
     }
 }

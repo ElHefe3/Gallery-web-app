@@ -16,8 +16,8 @@ namespace LOGIC.Services.Models.User
         public String user_nickname { get; set; }
         public String password_hash { get; set; } //review data type
 
-        public ICollection<I_Permission> i_permissions { get; set; }
+      //  public ICollection<I_Permission> i_permissions { get; set; }
 
-        public ICollection<A_Permission> a_permissions { get; set; }
+      //  public ICollection<A_Permission> a_permissions { get; set; }
     }
 }

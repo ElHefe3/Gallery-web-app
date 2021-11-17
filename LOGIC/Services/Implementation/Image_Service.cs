@@ -21,7 +21,7 @@ namespace LOGIC.Services.Implementation
         //Refernce to crud functions
         private ICRUD _crud = new CRUD();
 
-        public async Task<Generic_ResultSet<Image_ResultSet>> AddSingleImage(int image_id, int album_id, string image_captured_date, string image_captured_by, string image_tags, string geolocation)
+        public async Task<Generic_ResultSet<Image_ResultSet>> AddSingleImage(int album_id, DateTime image_captured_date, string image_captured_by, string image_tags, string geolocation)
         {
             Generic_ResultSet<Image_ResultSet> result = new Generic_ResultSet<Image_ResultSet>();
             try
@@ -29,7 +29,6 @@ namespace LOGIC.Services.Implementation
                 //INIT NEW DB ENTITY OF Image
                 Image Image = new Image
                 {
-                    Image_ID = image_id,
                     Album_ID = album_id,
                     Image_Captured_By = image_captured_by,
                     Image_Tags = image_tags,
@@ -44,11 +43,15 @@ namespace LOGIC.Services.Implementation
                 //MANUAL MAPPING OF RETURNED Image VALUES TO OUR Image_ResultSet
                 Image_ResultSet imageAdded = new Image_ResultSet
                 {
-                    ////////////////SEE TUTORIAL VIDEO
+                    image_id = Image.Image_ID,
+                    album_id = Image.Album_ID,
+                    image_captured_by = Image.Image_Captured_By,
+                    image_tags = Image.Image_Tags,
+                    geolocation = Image.Geolocation
                 };
 
                 //SET SUCCESSFUL RESULT VALUES
-                result.userMessage = string.Format("The supplied image {0} was added successfully", image_id);
+                result.userMessage = string.Format("The supplied image {0} was added successfully", image_captured_by);// <<=======
                 result.internalMessage = "LOGIC.Services.Implementation.Image_Service: AddSingleImage() method executed successfully.";
                 result.result_set = imageAdded;
                 result.success = true;
@@ -57,7 +60,7 @@ namespace LOGIC.Services.Implementation
             {
                 //SET FAILED RESULT VALUES
                 result.exception = exception;
-                result.userMessage = "We failed to register your information for the image supplied. Please try again.";
+                result.userMessage = "We failed to register your information for the image supplied. Please try again." + exception.Message;
                 result.internalMessage = string.Format("ERROR: LOGIC.Services.Implementation.Image_Service: AddSingleImage(): {0}", exception.Message); ;
                 //Success by default is set to false & its always the last value we set in the try block, so we should never need to set it in the catch block.
             }
@@ -100,7 +103,7 @@ namespace LOGIC.Services.Implementation
             return result;
         }
 
-        public async Task<Generic_ResultSet<Image_ResultSet>> UpdateImage(int image_id, int album_id, string image_captured_date, string image_captured_by, string image_tags, string geolocation)
+        public async Task<Generic_ResultSet<Image_ResultSet>> UpdateImage(int image_id, int album_id, DateTime image_captured_date, string image_captured_by, string image_tags, string geolocation)
         {
             Generic_ResultSet<Image_ResultSet> result = new Generic_ResultSet<Image_ResultSet>();
             try
@@ -121,7 +124,11 @@ namespace LOGIC.Services.Implementation
                 //MANUAL MAPPING OF RETURNED Image VALUES TO OUR Image_ResultSet
                 Image_ResultSet imageUpdated = new Image_ResultSet
                 {
-                    ////////////////SEE TUTORIAL VIDEO
+                    image_id = Image.Image_ID,
+                    album_id = Image.Album_ID,
+                    image_captured_by = Image.Image_Captured_By,
+                    image_tags = Image.Image_Tags,
+                    geolocation = Image.Geolocation
                 };
 
                 //SET SUCCESSFUL RESULT VALUES

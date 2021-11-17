@@ -1,0 +1,15 @@
+C:\Users\Bernie Nel\Documents\GitHub\Gallery-web-app\LOGIC\obj\Debug\net6.0\LOGIC.csproj.AssemblyReference.cache
+C:\Users\Bernie Nel\Documents\GitHub\Gallery-web-app\LOGIC\obj\Debug\net6.0\LOGIC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Bernie Nel\Documents\GitHub\Gallery-web-app\LOGIC\obj\Debug\net6.0\LOGIC.AssemblyInfoInputs.cache
+C:\Users\Bernie Nel\Documents\GitHub\Gallery-web-app\LOGIC\obj\Debug\net6.0\LOGIC.AssemblyInfo.cs
+C:\Users\Bernie Nel\Documents\GitHub\Gallery-web-app\LOGIC\obj\Debug\net6.0\LOGIC.csproj.CoreCompileInputs.cache
+C:\Users\Bernie Nel\Documents\GitHub\Gallery-web-app\LOGIC\bin\Debug\net6.0\LOGIC.deps.json
+C:\Users\Bernie Nel\Documents\GitHub\Gallery-web-app\LOGIC\bin\Debug\net6.0\LOGIC.dll
+C:\Users\Bernie Nel\Documents\GitHub\Gallery-web-app\LOGIC\bin\Debug\net6.0\ref\LOGIC.dll
+C:\Users\Bernie Nel\Documents\GitHub\Gallery-web-app\LOGIC\bin\Debug\net6.0\LOGIC.pdb
+C:\Users\Bernie Nel\Documents\GitHub\Gallery-web-app\LOGIC\bin\Debug\net6.0\DAL.dll
+C:\Users\Bernie Nel\Documents\GitHub\Gallery-web-app\LOGIC\bin\Debug\net6.0\DAL.pdb
+C:\Users\Bernie Nel\Documents\GitHub\Gallery-web-app\LOGIC\obj\Debug\net6.0\LOGIC.csproj.CopyComplete
+C:\Users\Bernie Nel\Documents\GitHub\Gallery-web-app\LOGIC\obj\Debug\net6.0\LOGIC.dll
+C:\Users\Bernie Nel\Documents\GitHub\Gallery-web-app\LOGIC\obj\Debug\net6.0\ref\LOGIC.dll
+C:\Users\Bernie Nel\Documents\GitHub\Gallery-web-app\LOGIC\obj\Debug\net6.0\LOGIC.pdb
