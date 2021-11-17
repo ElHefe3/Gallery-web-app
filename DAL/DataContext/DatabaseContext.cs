@@ -96,7 +96,7 @@ namespace DAL.DataContext
             modelBuilder.Entity<Image>().Property(image => image.Image_ID).UseIdentityColumn(1, 1).IsRequired().HasColumnName("image_id");
             //COLUMN SETTINGS
             modelBuilder.Entity<Image>().Property(image => image.Album_ID).IsRequired(true).HasMaxLength(100).HasColumnName("album_id");
-            modelBuilder.Entity<Image>().Property(image => image.Image_Capture_Date).IsRequired(true).HasDefaultValue(image_Capture_Date).HasColumnName("image_capture_date");
+            modelBuilder.Entity<Image>().Property(image => image.Image_Captured_Date).IsRequired(true).HasDefaultValue(image_Capture_Date).HasColumnName("image_capture_date");
             modelBuilder.Entity<Image>().Property(image => image.Image_Captured_By).IsRequired(true).HasMaxLength(100).HasColumnName("image_captured_by");
             modelBuilder.Entity<Image>().Property(image => image.Image_Tags).IsRequired(true).HasMaxLength(100).HasColumnName("image_tags");
 

@@ -67,3 +67,5 @@ C:\Users\Bernie Nel\Documents\GitHub\Gallery-web-app\Gallery2\bin\Debug\net6.0\D
 C:\Users\Bernie Nel\Documents\GitHub\Gallery-web-app\Gallery2\bin\Debug\net6.0\LOGIC.dll
 C:\Users\Bernie Nel\Documents\GitHub\Gallery-web-app\Gallery2\bin\Debug\net6.0\DAL.pdb
 C:\Users\Bernie Nel\Documents\GitHub\Gallery-web-app\Gallery2\bin\Debug\net6.0\LOGIC.pdb
+C:\Users\Bernie Nel\Documents\GitHub\Gallery-web-app\Gallery2\bin\Debug\net6.0\Humanizer.dll
+C:\Users\Bernie Nel\Documents\GitHub\Gallery-web-app\Gallery2\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll

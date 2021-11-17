@@ -27,8 +27,8 @@ namespace WEB_API.Controllers
         [HttpPost]
         [Route("[action]")]
         public async Task<IActionResult> AddImage(Image_Pass_Object image)
-        {                                                                                             //////////////note the date to string
-            var result = await _image_Service.AddSingleImage(image.album_id, image.image_capture_date.ToString(), image.image_captured_by, image.image_tags, image.geolocation);
+        {                                                                                             
+            var result = await _image_Service.AddSingleImage(image.album_id, image.image_captured_date, image.image_captured_by, image.image_tags, image.geolocation);
             switch (result.success)
             {
                 case true:
@@ -58,7 +58,7 @@ namespace WEB_API.Controllers
         [Route("[action]")]
         public async Task<IActionResult> UpdateImage(ImageUpdate_Pass_Object image)
         {
-            var result = await _image_Service.UpdateImage(image.image_id, image.album_id, image.image_capture_date.ToString(), image.image_captured_by, image.image_tags, image.geolocation);
+            var result = await _image_Service.UpdateImage(image.image_id, image.album_id, image.image_captured_date, image.image_captured_by, image.image_tags, image.geolocation);
             switch (result.success)
             {
                 case true:
