@@ -3,7 +3,7 @@
     public class Image_Pass_Object
     {
 
-        public int album_id { get; set; }
+        public Int64 album_id { get; set; }
         public String image_name { get; set; }
        // public DateTime image_capture_date { get; set; } //review data type
 

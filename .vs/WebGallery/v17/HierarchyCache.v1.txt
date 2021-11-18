@@ -1,0 +1,291 @@
+﻿++Solution 'WebGallery' ‎(4 of 4 projects)
+i:{00000000-0000-0000-0000-000000000000}:WebGallery.sln
+++DAL
+i:{00000000-0000-0000-0000-000000000000}:DAL
+i:{9e337c99-1d43-40dc-8714-85145c34ba03}:c:\users\bernie nel\documents\github\gallery-web-app\dal\bin\debug\net6.0\dal.dll
+i:{92d37bc8-2cc0-49cb-a290-a74295b1957c}:c:\users\bernie nel\documents\github\gallery-web-app\dal\dal.csproj
+i:{4778f48e-96c6-423f-bf33-1fe75ecf7ec8}:c:\users\bernie nel\documents\github\gallery-web-app\dal\bin\debug\net6.0\dal.dll
+++Dependencies
+i:{3dc1e79b-5533-42c2-b195-c5cb4beb6ff0}:>532
+i:{9e337c99-1d43-40dc-8714-85145c34ba03}:>531
+i:{92d37bc8-2cc0-49cb-a290-a74295b1957c}:>804
+i:{4778f48e-96c6-423f-bf33-1fe75ecf7ec8}:>805
+++DataContext
+i:{3dc1e79b-5533-42c2-b195-c5cb4beb6ff0}:c:\users\bernie nel\documents\github\gallery-web-app\dal\datacontext\
+++AppConfiguration.cs
+i:{3dc1e79b-5533-42c2-b195-c5cb4beb6ff0}:c:\users\bernie nel\documents\github\gallery-web-app\dal\datacontext\appconfiguration.cs
+++DatabaseContext.cs
+i:{3dc1e79b-5533-42c2-b195-c5cb4beb6ff0}:c:\users\bernie nel\documents\github\gallery-web-app\dal\datacontext\databasecontext.cs
+++DatabaseContextFactory.cs
+i:{3dc1e79b-5533-42c2-b195-c5cb4beb6ff0}:c:\users\bernie nel\documents\github\gallery-web-app\dal\datacontext\databasecontextfactory.cs
+++Entities
+i:{3dc1e79b-5533-42c2-b195-c5cb4beb6ff0}:c:\users\bernie nel\documents\github\gallery-web-app\dal\entities\
+++A_Permission.cs
+i:{3dc1e79b-5533-42c2-b195-c5cb4beb6ff0}:c:\users\bernie nel\documents\github\gallery-web-app\dal\entities\a_permission.cs
+++Album.cs
+i:{3dc1e79b-5533-42c2-b195-c5cb4beb6ff0}:c:\users\bernie nel\documents\github\gallery-web-app\dal\entities\album.cs
+++I_Permission.cs
+i:{3dc1e79b-5533-42c2-b195-c5cb4beb6ff0}:c:\users\bernie nel\documents\github\gallery-web-app\dal\entities\i_permission.cs
+++Image.cs
+i:{3dc1e79b-5533-42c2-b195-c5cb4beb6ff0}:c:\users\bernie nel\documents\github\gallery-web-app\dal\entities\image.cs
+++User.cs
+i:{3dc1e79b-5533-42c2-b195-c5cb4beb6ff0}:c:\users\bernie nel\documents\github\gallery-web-app\dal\entities\user.cs
+++Functions
+i:{3dc1e79b-5533-42c2-b195-c5cb4beb6ff0}:c:\users\bernie nel\documents\github\gallery-web-app\dal\functions\
+++Crud
+i:{3dc1e79b-5533-42c2-b195-c5cb4beb6ff0}:c:\users\bernie nel\documents\github\gallery-web-app\dal\functions\crud\
+++CRUD.cs
+i:{3dc1e79b-5533-42c2-b195-c5cb4beb6ff0}:c:\users\bernie nel\documents\github\gallery-web-app\dal\functions\crud\crud.cs
+++Interfaces
+i:{3dc1e79b-5533-42c2-b195-c5cb4beb6ff0}:c:\users\bernie nel\documents\github\gallery-web-app\dal\functions\interfaces\
+i:{9e337c99-1d43-40dc-8714-85145c34ba03}:c:\users\bernie nel\documents\github\gallery-web-app\logic\services\interfaces\
+++ICRUD.cs
+i:{3dc1e79b-5533-42c2-b195-c5cb4beb6ff0}:c:\users\bernie nel\documents\github\gallery-web-app\dal\functions\interfaces\icrud.cs
+++Migrations
+i:{3dc1e79b-5533-42c2-b195-c5cb4beb6ff0}:c:\users\bernie nel\documents\github\gallery-web-app\dal\migrations\
+++Analyzers
+i:{3dc1e79b-5533-42c2-b195-c5cb4beb6ff0}:analyzers
+i:{9e337c99-1d43-40dc-8714-85145c34ba03}:analyzers
+i:{92d37bc8-2cc0-49cb-a290-a74295b1957c}:analyzers
+i:{4778f48e-96c6-423f-bf33-1fe75ecf7ec8}:analyzers
+++Frameworks
+i:{3dc1e79b-5533-42c2-b195-c5cb4beb6ff0}:frameworks
+i:{9e337c99-1d43-40dc-8714-85145c34ba03}:frameworks
+i:{92d37bc8-2cc0-49cb-a290-a74295b1957c}:frameworks
+i:{4778f48e-96c6-423f-bf33-1fe75ecf7ec8}:frameworks
+++Packages
+i:{3dc1e79b-5533-42c2-b195-c5cb4beb6ff0}:packages
+i:{92d37bc8-2cc0-49cb-a290-a74295b1957c}:packages
+i:{4778f48e-96c6-423f-bf33-1fe75ecf7ec8}:packages
+++20211117135737_InitDatabase.cs
+i:{3dc1e79b-5533-42c2-b195-c5cb4beb6ff0}:c:\users\bernie nel\documents\github\gallery-web-app\dal\migrations\20211117135737_initdatabase.cs
+++DatabaseContextModelSnapshot.cs
+i:{3dc1e79b-5533-42c2-b195-c5cb4beb6ff0}:c:\users\bernie nel\documents\github\gallery-web-app\dal\migrations\databasecontextmodelsnapshot.cs
+++Microsoft.CodeAnalysis.CSharp.NetAnalyzers
+i:{3dc1e79b-5533-42c2-b195-c5cb4beb6ff0}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{9e337c99-1d43-40dc-8714-85145c34ba03}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{92d37bc8-2cc0-49cb-a290-a74295b1957c}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{4778f48e-96c6-423f-bf33-1fe75ecf7ec8}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+++Microsoft.CodeAnalysis.NetAnalyzers
+i:{3dc1e79b-5533-42c2-b195-c5cb4beb6ff0}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{9e337c99-1d43-40dc-8714-85145c34ba03}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{92d37bc8-2cc0-49cb-a290-a74295b1957c}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{4778f48e-96c6-423f-bf33-1fe75ecf7ec8}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+++Microsoft.EntityFrameworkCore.Analyzers
+i:{3dc1e79b-5533-42c2-b195-c5cb4beb6ff0}:c:\users\bernie nel\.nuget\packages\microsoft.entityframeworkcore.analyzers\6.0.0\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+i:{9e337c99-1d43-40dc-8714-85145c34ba03}:c:\users\bernie nel\.nuget\packages\microsoft.entityframeworkcore.analyzers\6.0.0\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+i:{92d37bc8-2cc0-49cb-a290-a74295b1957c}:c:\users\bernie nel\.nuget\packages\microsoft.entityframeworkcore.analyzers\6.0.0\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+i:{4778f48e-96c6-423f-bf33-1fe75ecf7ec8}:c:\users\bernie nel\.nuget\packages\microsoft.entityframeworkcore.analyzers\6.0.0\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+++Microsoft.Extensions.Logging.Generators
+i:{3dc1e79b-5533-42c2-b195-c5cb4beb6ff0}:c:\users\bernie nel\.nuget\packages\microsoft.extensions.logging.abstractions\6.0.0\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+i:{9e337c99-1d43-40dc-8714-85145c34ba03}:c:\users\bernie nel\.nuget\packages\microsoft.extensions.logging.abstractions\6.0.0\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+i:{92d37bc8-2cc0-49cb-a290-a74295b1957c}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+i:{4778f48e-96c6-423f-bf33-1fe75ecf7ec8}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+++System.Text.Json.SourceGeneration
+i:{3dc1e79b-5533-42c2-b195-c5cb4beb6ff0}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.0\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+i:{9e337c99-1d43-40dc-8714-85145c34ba03}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.0\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+i:{92d37bc8-2cc0-49cb-a290-a74295b1957c}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.0\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+i:{4778f48e-96c6-423f-bf33-1fe75ecf7ec8}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.0\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+++Microsoft.NETCore.App
+i:{3dc1e79b-5533-42c2-b195-c5cb4beb6ff0}:c:\users\bernie nel\documents\github\gallery-web-app\dal\microsoft.netcore.app
+i:{9e337c99-1d43-40dc-8714-85145c34ba03}:c:\users\bernie nel\documents\github\gallery-web-app\logic\microsoft.netcore.app
+i:{92d37bc8-2cc0-49cb-a290-a74295b1957c}:c:\users\bernie nel\documents\github\gallery-web-app\gallery2\microsoft.netcore.app
+i:{4778f48e-96c6-423f-bf33-1fe75ecf7ec8}:c:\users\bernie nel\documents\github\gallery-web-app\web_api\microsoft.netcore.app
+++Microsoft.EntityFrameworkCore (6.0.0)
+i:{3dc1e79b-5533-42c2-b195-c5cb4beb6ff0}:>831
+++Microsoft.EntityFrameworkCore.Design (6.0.0)
+i:{3dc1e79b-5533-42c2-b195-c5cb4beb6ff0}:>833
+i:{92d37bc8-2cc0-49cb-a290-a74295b1957c}:>827
+++Microsoft.EntityFrameworkCore.SqlServer (6.0.0)
+i:{3dc1e79b-5533-42c2-b195-c5cb4beb6ff0}:>832
+++Microsoft.EntityFrameworkCore.SqlServer.Design (1.1.6)
+i:{3dc1e79b-5533-42c2-b195-c5cb4beb6ff0}:>830
+++Microsoft.EntityFrameworkCore.Tools (6.0.0)
+i:{3dc1e79b-5533-42c2-b195-c5cb4beb6ff0}:>837
+++Microsoft.Extensions.Configuration (5.0.0)
+i:{3dc1e79b-5533-42c2-b195-c5cb4beb6ff0}:>835
+++Microsoft.Extensions.Configuration.Json (5.0.0)
+i:{3dc1e79b-5533-42c2-b195-c5cb4beb6ff0}:>834
+++20211117135737_InitDatabase.Designer.cs
+i:{3dc1e79b-5533-42c2-b195-c5cb4beb6ff0}:c:\users\bernie nel\documents\github\gallery-web-app\dal\migrations\20211117135737_initdatabase.designer.cs
+++LOGIC
+i:{00000000-0000-0000-0000-000000000000}:LOGIC
+i:{92d37bc8-2cc0-49cb-a290-a74295b1957c}:c:\users\bernie nel\documents\github\gallery-web-app\logic\logic.csproj
+i:{4778f48e-96c6-423f-bf33-1fe75ecf7ec8}:c:\users\bernie nel\documents\github\gallery-web-app\logic\bin\debug\net6.0\logic.dll
+++Services
+i:{9e337c99-1d43-40dc-8714-85145c34ba03}:c:\users\bernie nel\documents\github\gallery-web-app\logic\services\
+++Implementation
+i:{9e337c99-1d43-40dc-8714-85145c34ba03}:c:\users\bernie nel\documents\github\gallery-web-app\logic\services\implementation\
+++A_Permission_Service.cs
+i:{9e337c99-1d43-40dc-8714-85145c34ba03}:c:\users\bernie nel\documents\github\gallery-web-app\logic\services\implementation\a_permission_service.cs
+++Album_Service.cs
+i:{9e337c99-1d43-40dc-8714-85145c34ba03}:c:\users\bernie nel\documents\github\gallery-web-app\logic\services\implementation\album_service.cs
+++I_Permission_Service.cs
+i:{9e337c99-1d43-40dc-8714-85145c34ba03}:c:\users\bernie nel\documents\github\gallery-web-app\logic\services\implementation\i_permission_service.cs
+++Image_Service.cs
+i:{9e337c99-1d43-40dc-8714-85145c34ba03}:c:\users\bernie nel\documents\github\gallery-web-app\logic\services\implementation\image_service.cs
+++User_Service.cs
+i:{9e337c99-1d43-40dc-8714-85145c34ba03}:c:\users\bernie nel\documents\github\gallery-web-app\logic\services\implementation\user_service.cs
+++IA_Permission_Service.cs
+i:{9e337c99-1d43-40dc-8714-85145c34ba03}:c:\users\bernie nel\documents\github\gallery-web-app\logic\services\interfaces\ia_permission_service.cs
+++IAlbum_Service.cs
+i:{9e337c99-1d43-40dc-8714-85145c34ba03}:c:\users\bernie nel\documents\github\gallery-web-app\logic\services\interfaces\ialbum_service.cs
+++II_Permission_Service.cs
+i:{9e337c99-1d43-40dc-8714-85145c34ba03}:c:\users\bernie nel\documents\github\gallery-web-app\logic\services\interfaces\ii_permission_service.cs
+++IImage_Service.cs
+i:{9e337c99-1d43-40dc-8714-85145c34ba03}:c:\users\bernie nel\documents\github\gallery-web-app\logic\services\interfaces\iimage_service.cs
+++IUser_Service.cs
+i:{9e337c99-1d43-40dc-8714-85145c34ba03}:c:\users\bernie nel\documents\github\gallery-web-app\logic\services\interfaces\iuser_service.cs
+++Models
+i:{9e337c99-1d43-40dc-8714-85145c34ba03}:c:\users\bernie nel\documents\github\gallery-web-app\logic\services\models\
+i:{92d37bc8-2cc0-49cb-a290-a74295b1957c}:c:\users\bernie nel\documents\github\gallery-web-app\gallery2\models\
+i:{4778f48e-96c6-423f-bf33-1fe75ecf7ec8}:c:\users\bernie nel\documents\github\gallery-web-app\web_api\models\
+++A_Permission
+i:{9e337c99-1d43-40dc-8714-85145c34ba03}:c:\users\bernie nel\documents\github\gallery-web-app\logic\services\models\a_permission\
+i:{92d37bc8-2cc0-49cb-a290-a74295b1957c}:c:\users\bernie nel\documents\github\gallery-web-app\gallery2\models\a_permission\
+i:{4778f48e-96c6-423f-bf33-1fe75ecf7ec8}:c:\users\bernie nel\documents\github\gallery-web-app\web_api\models\a_permission\
+++Album
+i:{9e337c99-1d43-40dc-8714-85145c34ba03}:c:\users\bernie nel\documents\github\gallery-web-app\logic\services\models\album\
+i:{92d37bc8-2cc0-49cb-a290-a74295b1957c}:c:\users\bernie nel\documents\github\gallery-web-app\gallery2\models\album\
+i:{4778f48e-96c6-423f-bf33-1fe75ecf7ec8}:c:\users\bernie nel\documents\github\gallery-web-app\web_api\models\album\
+++I_Permission
+i:{9e337c99-1d43-40dc-8714-85145c34ba03}:c:\users\bernie nel\documents\github\gallery-web-app\logic\services\models\i_permission\
+i:{92d37bc8-2cc0-49cb-a290-a74295b1957c}:c:\users\bernie nel\documents\github\gallery-web-app\gallery2\models\i_permission\
+i:{4778f48e-96c6-423f-bf33-1fe75ecf7ec8}:c:\users\bernie nel\documents\github\gallery-web-app\web_api\models\i_permission\
+++Image
+i:{9e337c99-1d43-40dc-8714-85145c34ba03}:c:\users\bernie nel\documents\github\gallery-web-app\logic\services\models\image\
+i:{92d37bc8-2cc0-49cb-a290-a74295b1957c}:c:\users\bernie nel\documents\github\gallery-web-app\gallery2\models\image\
+i:{4778f48e-96c6-423f-bf33-1fe75ecf7ec8}:c:\users\bernie nel\documents\github\gallery-web-app\web_api\models\image\
+++Image_ResultSet.cs
+i:{9e337c99-1d43-40dc-8714-85145c34ba03}:c:\users\bernie nel\documents\github\gallery-web-app\logic\services\models\image\image_resultset.cs
+++User
+i:{9e337c99-1d43-40dc-8714-85145c34ba03}:c:\users\bernie nel\documents\github\gallery-web-app\logic\services\models\user\
+i:{92d37bc8-2cc0-49cb-a290-a74295b1957c}:c:\users\bernie nel\documents\github\gallery-web-app\gallery2\models\user\
+i:{4778f48e-96c6-423f-bf33-1fe75ecf7ec8}:c:\users\bernie nel\documents\github\gallery-web-app\web_api\models\user\
+++User_ResultSet.cs
+i:{9e337c99-1d43-40dc-8714-85145c34ba03}:c:\users\bernie nel\documents\github\gallery-web-app\logic\services\models\user\user_resultset.cs
+++Generic_ResultSet.cs
+i:{9e337c99-1d43-40dc-8714-85145c34ba03}:c:\users\bernie nel\documents\github\gallery-web-app\logic\services\models\generic_resultset.cs
+++StandardResultObject.cs
+i:{9e337c99-1d43-40dc-8714-85145c34ba03}:c:\users\bernie nel\documents\github\gallery-web-app\logic\services\models\standardresultobject.cs
+++Projects
+i:{9e337c99-1d43-40dc-8714-85145c34ba03}:projects
+i:{92d37bc8-2cc0-49cb-a290-a74295b1957c}:projects
+i:{4778f48e-96c6-423f-bf33-1fe75ecf7ec8}:projects
+++A_Permission_ResultSet.cs
+i:{9e337c99-1d43-40dc-8714-85145c34ba03}:c:\users\bernie nel\documents\github\gallery-web-app\logic\services\models\a_permission\a_permission_resultset.cs
+++Album_ResultSet.cs
+i:{9e337c99-1d43-40dc-8714-85145c34ba03}:c:\users\bernie nel\documents\github\gallery-web-app\logic\services\models\album\album_resultset.cs
+++I_Permission_ResultSet.cs
+i:{9e337c99-1d43-40dc-8714-85145c34ba03}:c:\users\bernie nel\documents\github\gallery-web-app\logic\services\models\i_permission\i_permission_resultset.cs
+++Gallery2
+i:{00000000-0000-0000-0000-000000000000}:Gallery2
+++Connected Services 
+i:{92d37bc8-2cc0-49cb-a290-a74295b1957c}:>806
+i:{4778f48e-96c6-423f-bf33-1fe75ecf7ec8}:>807
+++Properties
+i:{92d37bc8-2cc0-49cb-a290-a74295b1957c}:c:\users\bernie nel\documents\github\gallery-web-app\gallery2\properties\
+i:{4778f48e-96c6-423f-bf33-1fe75ecf7ec8}:c:\users\bernie nel\documents\github\gallery-web-app\web_api\properties\
+++Controllers
+i:{92d37bc8-2cc0-49cb-a290-a74295b1957c}:c:\users\bernie nel\documents\github\gallery-web-app\gallery2\controllers\
+i:{4778f48e-96c6-423f-bf33-1fe75ecf7ec8}:c:\users\bernie nel\documents\github\gallery-web-app\web_api\controllers\
+++A_PermissionController.cs
+i:{92d37bc8-2cc0-49cb-a290-a74295b1957c}:c:\users\bernie nel\documents\github\gallery-web-app\gallery2\controllers\a_permissioncontroller.cs
+i:{4778f48e-96c6-423f-bf33-1fe75ecf7ec8}:c:\users\bernie nel\documents\github\gallery-web-app\web_api\controllers\a_permissioncontroller.cs
+++AlbumController.cs
+i:{92d37bc8-2cc0-49cb-a290-a74295b1957c}:c:\users\bernie nel\documents\github\gallery-web-app\gallery2\controllers\albumcontroller.cs
+i:{4778f48e-96c6-423f-bf33-1fe75ecf7ec8}:c:\users\bernie nel\documents\github\gallery-web-app\web_api\controllers\albumcontroller.cs
+++I_PermissionController.cs
+i:{92d37bc8-2cc0-49cb-a290-a74295b1957c}:c:\users\bernie nel\documents\github\gallery-web-app\gallery2\controllers\i_permissioncontroller.cs
+i:{4778f48e-96c6-423f-bf33-1fe75ecf7ec8}:c:\users\bernie nel\documents\github\gallery-web-app\web_api\controllers\i_permissioncontroller.cs
+++ImageController.cs
+i:{92d37bc8-2cc0-49cb-a290-a74295b1957c}:c:\users\bernie nel\documents\github\gallery-web-app\gallery2\controllers\imagecontroller.cs
+i:{4778f48e-96c6-423f-bf33-1fe75ecf7ec8}:c:\users\bernie nel\documents\github\gallery-web-app\web_api\controllers\imagecontroller.cs
+++UserController.cs
+i:{92d37bc8-2cc0-49cb-a290-a74295b1957c}:c:\users\bernie nel\documents\github\gallery-web-app\gallery2\controllers\usercontroller.cs
+i:{4778f48e-96c6-423f-bf33-1fe75ecf7ec8}:c:\users\bernie nel\documents\github\gallery-web-app\web_api\controllers\usercontroller.cs
+++Image_Pass_Object.cs
+i:{92d37bc8-2cc0-49cb-a290-a74295b1957c}:c:\users\bernie nel\documents\github\gallery-web-app\gallery2\models\image\image_pass_object.cs
+i:{4778f48e-96c6-423f-bf33-1fe75ecf7ec8}:c:\users\bernie nel\documents\github\gallery-web-app\web_api\models\image\image_pass_object.cs
+++ImageDelete_Pass_Object.cs
+i:{92d37bc8-2cc0-49cb-a290-a74295b1957c}:c:\users\bernie nel\documents\github\gallery-web-app\gallery2\models\image\imagedelete_pass_object.cs
+++ImageUpdate_Pass_Object.cs
+i:{92d37bc8-2cc0-49cb-a290-a74295b1957c}:c:\users\bernie nel\documents\github\gallery-web-app\gallery2\models\image\imageupdate_pass_object.cs
+i:{4778f48e-96c6-423f-bf33-1fe75ecf7ec8}:c:\users\bernie nel\documents\github\gallery-web-app\web_api\models\image\imageupdate_pass_object.cs
+++appsettings.json
+i:{92d37bc8-2cc0-49cb-a290-a74295b1957c}:c:\users\bernie nel\documents\github\gallery-web-app\gallery2\appsettings.json
+i:{4778f48e-96c6-423f-bf33-1fe75ecf7ec8}:c:\users\bernie nel\documents\github\gallery-web-app\web_api\appsettings.json
+++Program.cs
+i:{92d37bc8-2cc0-49cb-a290-a74295b1957c}:c:\users\bernie nel\documents\github\gallery-web-app\gallery2\program.cs
+i:{4778f48e-96c6-423f-bf33-1fe75ecf7ec8}:c:\users\bernie nel\documents\github\gallery-web-app\web_api\program.cs
+++Startup.cs
+i:{92d37bc8-2cc0-49cb-a290-a74295b1957c}:c:\users\bernie nel\documents\github\gallery-web-app\gallery2\startup.cs
+i:{4778f48e-96c6-423f-bf33-1fe75ecf7ec8}:c:\users\bernie nel\documents\github\gallery-web-app\web_api\startup.cs
+++No service dependencies discovered
+i:{92d37bc8-2cc0-49cb-a290-a74295b1957c}:>808
+i:{4778f48e-96c6-423f-bf33-1fe75ecf7ec8}:>809
+++launchSettings.json
+i:{92d37bc8-2cc0-49cb-a290-a74295b1957c}:c:\users\bernie nel\documents\github\gallery-web-app\gallery2\properties\launchsettings.json
+i:{4778f48e-96c6-423f-bf33-1fe75ecf7ec8}:c:\users\bernie nel\documents\github\gallery-web-app\web_api\properties\launchsettings.json
+++A_Permission_Pass_Object.cs
+i:{92d37bc8-2cc0-49cb-a290-a74295b1957c}:c:\users\bernie nel\documents\github\gallery-web-app\gallery2\models\a_permission\a_permission_pass_object.cs
+i:{4778f48e-96c6-423f-bf33-1fe75ecf7ec8}:c:\users\bernie nel\documents\github\gallery-web-app\web_api\models\a_permission\a_permission_pass_object.cs
+++A_PermissionUpdate_Pass_Object.cs
+i:{92d37bc8-2cc0-49cb-a290-a74295b1957c}:c:\users\bernie nel\documents\github\gallery-web-app\gallery2\models\a_permission\a_permissionupdate_pass_object.cs
+i:{4778f48e-96c6-423f-bf33-1fe75ecf7ec8}:c:\users\bernie nel\documents\github\gallery-web-app\web_api\models\a_permission\a_permissionupdate_pass_object.cs
+++Album_Pass_Object.cs
+i:{92d37bc8-2cc0-49cb-a290-a74295b1957c}:c:\users\bernie nel\documents\github\gallery-web-app\gallery2\models\album\album_pass_object.cs
+i:{4778f48e-96c6-423f-bf33-1fe75ecf7ec8}:c:\users\bernie nel\documents\github\gallery-web-app\web_api\models\album\album_pass_object.cs
+++AlbumUpdate_Pass_Object.cs
+i:{92d37bc8-2cc0-49cb-a290-a74295b1957c}:c:\users\bernie nel\documents\github\gallery-web-app\gallery2\models\album\albumupdate_pass_object.cs
+i:{4778f48e-96c6-423f-bf33-1fe75ecf7ec8}:c:\users\bernie nel\documents\github\gallery-web-app\web_api\models\album\albumupdate_pass_object.cs
+++I_Permission_Pass_Object.cs
+i:{92d37bc8-2cc0-49cb-a290-a74295b1957c}:c:\users\bernie nel\documents\github\gallery-web-app\gallery2\models\i_permission\i_permission_pass_object.cs
+i:{4778f48e-96c6-423f-bf33-1fe75ecf7ec8}:c:\users\bernie nel\documents\github\gallery-web-app\web_api\models\i_permission\i_permission_pass_object.cs
+++I_PermissionUpdate_Pass_Object.cs
+i:{92d37bc8-2cc0-49cb-a290-a74295b1957c}:c:\users\bernie nel\documents\github\gallery-web-app\gallery2\models\i_permission\i_permissionupdate_pass_object.cs
+i:{4778f48e-96c6-423f-bf33-1fe75ecf7ec8}:c:\users\bernie nel\documents\github\gallery-web-app\web_api\models\i_permission\i_permissionupdate_pass_object.cs
+++User_Pass_Object.cs
+i:{92d37bc8-2cc0-49cb-a290-a74295b1957c}:c:\users\bernie nel\documents\github\gallery-web-app\gallery2\models\user\user_pass_object.cs
+i:{4778f48e-96c6-423f-bf33-1fe75ecf7ec8}:c:\users\bernie nel\documents\github\gallery-web-app\web_api\models\user\user_pass_object.cs
+++UserUpdate_Pass_Object.cs
+i:{92d37bc8-2cc0-49cb-a290-a74295b1957c}:c:\users\bernie nel\documents\github\gallery-web-app\gallery2\models\user\userupdate_pass_object.cs
+i:{4778f48e-96c6-423f-bf33-1fe75ecf7ec8}:c:\users\bernie nel\documents\github\gallery-web-app\web_api\models\user\userupdate_pass_object.cs
+++appsettings.Development.json
+i:{92d37bc8-2cc0-49cb-a290-a74295b1957c}:c:\users\bernie nel\documents\github\gallery-web-app\gallery2\appsettings.development.json
+i:{4778f48e-96c6-423f-bf33-1fe75ecf7ec8}:c:\users\bernie nel\documents\github\gallery-web-app\web_api\appsettings.development.json
+++Microsoft.AspNetCore.Analyzers
+i:{92d37bc8-2cc0-49cb-a290-a74295b1957c}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.analyzers.dll
+i:{4778f48e-96c6-423f-bf33-1fe75ecf7ec8}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.analyzers.dll
+++Microsoft.AspNetCore.App.Analyzers
+i:{92d37bc8-2cc0-49cb-a290-a74295b1957c}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\cs\microsoft.aspnetcore.app.analyzers.dll
+i:{4778f48e-96c6-423f-bf33-1fe75ecf7ec8}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\cs\microsoft.aspnetcore.app.analyzers.dll
+++Microsoft.AspNetCore.App.CodeFixes
+i:{92d37bc8-2cc0-49cb-a290-a74295b1957c}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\cs\microsoft.aspnetcore.app.codefixes.dll
+i:{4778f48e-96c6-423f-bf33-1fe75ecf7ec8}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\cs\microsoft.aspnetcore.app.codefixes.dll
+++Microsoft.AspNetCore.Components.Analyzers
+i:{92d37bc8-2cc0-49cb-a290-a74295b1957c}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.components.analyzers.dll
+i:{4778f48e-96c6-423f-bf33-1fe75ecf7ec8}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.components.analyzers.dll
+++Microsoft.AspNetCore.Mvc.Analyzers
+i:{92d37bc8-2cc0-49cb-a290-a74295b1957c}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.mvc.analyzers.dll
+i:{4778f48e-96c6-423f-bf33-1fe75ecf7ec8}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.mvc.analyzers.dll
+++Microsoft.AspNetCore.Razor.Internal.SourceGenerator.Transport
+i:{92d37bc8-2cc0-49cb-a290-a74295b1957c}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk.razor\source-generators\microsoft.aspnetcore.razor.internal.sourcegenerator.transport.dll
+i:{4778f48e-96c6-423f-bf33-1fe75ecf7ec8}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk.razor\source-generators\microsoft.aspnetcore.razor.internal.sourcegenerator.transport.dll
+++Microsoft.NET.Sdk.Razor.SourceGenerators
+i:{92d37bc8-2cc0-49cb-a290-a74295b1957c}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk.razor\source-generators\microsoft.net.sdk.razor.sourcegenerators.dll
+i:{4778f48e-96c6-423f-bf33-1fe75ecf7ec8}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk.razor\source-generators\microsoft.net.sdk.razor.sourcegenerators.dll
+++Microsoft.AspNetCore.App
+i:{92d37bc8-2cc0-49cb-a290-a74295b1957c}:c:\users\bernie nel\documents\github\gallery-web-app\gallery2\microsoft.aspnetcore.app
+i:{4778f48e-96c6-423f-bf33-1fe75ecf7ec8}:c:\users\bernie nel\documents\github\gallery-web-app\web_api\microsoft.aspnetcore.app
+++Swashbuckle.AspNetCore (6.2.3)
+i:{92d37bc8-2cc0-49cb-a290-a74295b1957c}:>828
+i:{4778f48e-96c6-423f-bf33-1fe75ecf7ec8}:>865
+++WEB_API
+i:{00000000-0000-0000-0000-000000000000}:WEB_API
+++WeatherForecast.cs
+i:{4778f48e-96c6-423f-bf33-1fe75ecf7ec8}:c:\users\bernie nel\documents\github\gallery-web-app\web_api\weatherforecast.cs
+++WeatherForecastController.cs
+i:{4778f48e-96c6-423f-bf33-1fe75ecf7ec8}:c:\users\bernie nel\documents\github\gallery-web-app\web_api\controllers\weatherforecastcontroller.cs
+++ImageReadPass_Object.cs
+i:{92d37bc8-2cc0-49cb-a290-a74295b1957c}:c:\users\bernie nel\documents\github\gallery-web-app\gallery2\models\image\imagereadpass_object.cs

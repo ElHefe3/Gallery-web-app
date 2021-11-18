@@ -24,12 +24,12 @@ namespace DAL.Migrations
 
             modelBuilder.Entity("DAL.Entities.A_Permission", b =>
                 {
-                    b.Property<int>("A_Permission_ID")
+                    b.Property<long>("A_Permission_ID")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
+                        .HasColumnType("bigint")
                         .HasColumnName("i_permission_id");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("A_Permission_ID"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("A_Permission_ID"), 1L, 1);
 
                     b.Property<string>("A_Permission_Type")
                         .IsRequired()
@@ -37,14 +37,14 @@ namespace DAL.Migrations
                         .HasColumnType("nvarchar(100)")
                         .HasColumnName("a_permission_type");
 
-                    b.Property<int>("Album_ID")
+                    b.Property<long>("Album_ID")
                         .HasMaxLength(100)
-                        .HasColumnType("int")
+                        .HasColumnType("bigint")
                         .HasColumnName("album_id");
 
-                    b.Property<int>("User_ID")
+                    b.Property<long>("User_ID")
                         .HasMaxLength(100)
-                        .HasColumnType("int")
+                        .HasColumnType("bigint")
                         .HasColumnName("user_id");
 
                     b.HasKey("A_Permission_ID");
@@ -58,12 +58,12 @@ namespace DAL.Migrations
 
             modelBuilder.Entity("DAL.Entities.Album", b =>
                 {
-                    b.Property<int>("Album_ID")
+                    b.Property<long>("Album_ID")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
+                        .HasColumnType("bigint")
                         .HasColumnName("album_id");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Album_ID"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Album_ID"), 1L, 1);
 
                     b.Property<string>("Album_Description")
                         .HasMaxLength(100)
@@ -83,12 +83,12 @@ namespace DAL.Migrations
 
             modelBuilder.Entity("DAL.Entities.I_Permission", b =>
                 {
-                    b.Property<int>("I_Permission_ID")
+                    b.Property<long>("I_Permission_ID")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
+                        .HasColumnType("bigint")
                         .HasColumnName("i_permission_id");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("I_Permission_ID"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("I_Permission_ID"), 1L, 1);
 
                     b.Property<string>("I_Permission_Type")
                         .IsRequired()
@@ -96,12 +96,12 @@ namespace DAL.Migrations
                         .HasColumnType("nvarchar(100)")
                         .HasColumnName("i_permission_type");
 
-                    b.Property<int>("Image_ID")
-                        .HasColumnType("int")
+                    b.Property<long>("Image_ID")
+                        .HasColumnType("bigint")
                         .HasColumnName("image_id");
 
-                    b.Property<int>("User_ID")
-                        .HasColumnType("int")
+                    b.Property<long>("User_ID")
+                        .HasColumnType("bigint")
                         .HasColumnName("user_id");
 
                     b.HasKey("I_Permission_ID");
@@ -115,15 +115,15 @@ namespace DAL.Migrations
 
             modelBuilder.Entity("DAL.Entities.Image", b =>
                 {
-                    b.Property<int>("Image_ID")
+                    b.Property<long>("Image_ID")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
+                        .HasColumnType("bigint")
                         .HasColumnName("image_id");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Image_ID"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Image_ID"), 1L, 1);
 
-                    b.Property<int>("Album_ID")
-                        .HasColumnType("int")
+                    b.Property<long>("Album_ID")
+                        .HasColumnType("bigint")
                         .HasColumnName("album_id");
 
                     b.Property<string>("Geolocation")
@@ -165,23 +165,17 @@ namespace DAL.Migrations
 
             modelBuilder.Entity("DAL.Entities.User", b =>
                 {
-                    b.Property<int>("User_ID")
+                    b.Property<long>("User_ID")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
+                        .HasColumnType("bigint")
                         .HasColumnName("user_id");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("User_ID"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("User_ID"), 1L, 1);
 
-                    b.Property<string>("Password_Hash")
+                    b.Property<string>("User_Email")
                         .HasMaxLength(250)
                         .HasColumnType("nvarchar(250)")
                         .HasColumnName("user_email");
-
-                    b.Property<string>("User_Email")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)")
-                        .HasColumnName("user_passwordhash");
 
                     b.Property<string>("User_Name")
                         .IsRequired()
@@ -194,6 +188,12 @@ namespace DAL.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)")
                         .HasColumnName("user_nickname");
+
+                    b.Property<string>("User_PasswordHash")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)")
+                        .HasColumnName("user_passwordhash");
 
                     b.Property<string>("User_Surname")
                         .IsRequired()

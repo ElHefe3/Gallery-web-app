@@ -14,15 +14,15 @@ namespace DAL.Functions.Crud
 {
     public class CRUD : ICRUD
     {
-        public async Task<T> Create<T>(T dbObject) where T : class
+        public async Task<T> Create<T>(T objectForDb) where T : class
         {
             try
             {
                 using (var context = new DatabaseContext(DatabaseContext.Options.DatabaseOptions))
                 {
-                    await context.AddAsync<T>(dbObject);
+                    await context.AddAsync<T>(objectForDb);
                     await context.SaveChangesAsync();
-                    return dbObject;
+                    return objectForDb;
                 }
             }
             catch
@@ -30,8 +30,7 @@ namespace DAL.Functions.Crud
                 throw;
             }
         }
-
-        public async Task<bool> Delete<T>(long entityId) where T : class
+        public async Task<bool> Delete<T>(Int64 entityId) where T : class
         {
             try
             {
@@ -53,7 +52,43 @@ namespace DAL.Functions.Crud
             }
         }
 
-        public async Task<T> Read<T>(long entityId) where T : class
+
+        public async Task<List<T>> LoginUser<T>(String user_nickname, String user_passwordhash) where T : class
+        {
+            try
+            {
+                using (DatabaseContext context = new DatabaseContext(DatabaseContext.Options.DatabaseOptions))
+                {
+                    var result = await context.Set<T>().ToListAsync();
+                    return result;
+                }
+            }
+            catch
+            {
+                throw;
+            }
+        }
+
+        public async Task<List<T>> IPermissionByUserID<T>(Int64 userID) where T : class
+        {
+            try
+            {
+                using (DatabaseContext context = new DatabaseContext(DatabaseContext.Options.DatabaseOptions))
+                {
+                    var result = await context.Set<T>().ToListAsync();
+                    return result;
+                }
+            }
+            catch
+            {
+                throw;
+            }
+        }
+
+
+
+
+        public async Task<T> Read<T>(Int64 entityId) where T : class
         {
             try
             {
@@ -68,6 +103,8 @@ namespace DAL.Functions.Crud
                 throw;
             }
         }
+
+      
 
         public async Task<List<T>> ReadAll<T>() where T : class
         {
@@ -85,7 +122,7 @@ namespace DAL.Functions.Crud
             }
         }
 
-        public async Task<T> Update<T>(T objectToUpdate, long entityId) where T : class
+        public async Task<T> Update<T>(T objectToUpdate, Int64 entityId) where T : class
         {
             try
             {

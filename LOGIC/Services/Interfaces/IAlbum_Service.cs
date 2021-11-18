@@ -14,6 +14,6 @@ namespace LOGIC.Services.Interfaces
 
         Task<Generic_ResultSet<List<Album_ResultSet>>> GetAllAlbums();
 
-        Task<Generic_ResultSet<Album_ResultSet>> UpdateAlbum(int album_id, string album_name, string album_description);
+        Task<Generic_ResultSet<Album_ResultSet>> UpdateAlbum(Int64 album_id, string album_name, string album_description);
     }
 }

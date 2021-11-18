@@ -21,7 +21,7 @@ namespace LOGIC.Services.Implementation
         //Refernce to crud functions
         private ICRUD _crud = new CRUD();
 
-        public async Task<Generic_ResultSet<Image_ResultSet>> AddSingleImage(int album_id, DateTime image_captured_date, string image_captured_by, string image_tags, string geolocation)
+        public async Task<Generic_ResultSet<Image_ResultSet>> AddSingleImage(Int64 album_id, DateTime image_captured_date, string image_captured_by, string image_tags, string geolocation)
         {
             Generic_ResultSet<Image_ResultSet> result = new Generic_ResultSet<Image_ResultSet>();
             try
@@ -103,7 +103,7 @@ namespace LOGIC.Services.Implementation
             return result;
         }
 
-        public async Task<Generic_ResultSet<Image_ResultSet>> UpdateImage(int image_id, int album_id, DateTime image_captured_date, string image_captured_by, string image_tags, string geolocation)
+        public async Task<Generic_ResultSet<Image_ResultSet>> UpdateImage(Int64 image_id, Int64 album_id, DateTime image_captured_date, string image_captured_by, string image_tags, string geolocation)
         {
             Generic_ResultSet<Image_ResultSet> result = new Generic_ResultSet<Image_ResultSet>();
             try
@@ -145,6 +145,77 @@ namespace LOGIC.Services.Implementation
                 result.exception = exception;
                 result.userMessage = "We failed to update your information for the image supplied. Please try again.";
                 result.internalMessage = string.Format("ERROR: LOGIC.Services.Implementation.UpdateImage: AddSingleImage(): {0}", exception.Message); ;
+                //Success by default is set to false & its always the last value we set in the try block, so we should never need to set it in the catch block.
+            }
+            return result;
+        }
+
+
+        
+        public async Task<Generic_ResultSet<Image_ResultSet>> DeleteImage(Int64 image_id)
+        {
+            Generic_ResultSet<Image_ResultSet> result = new Generic_ResultSet<Image_ResultSet>();
+            try
+            {
+                //INIT NEW DB ENTITY OF Image
+                Image Image = new Image
+                {
+                    Image_ID = (int)image_id
+                };
+
+                //ADD Image TO DB
+               bool i_delete = await _crud.Delete<Image>(image_id);
+
+              //SET SUCCESSFUL RESULT VALUES
+
+
+                result.userMessage = string.Format("The supplied image {0} was deleted successfully", image_id);
+                result.internalMessage = "LOGIC.Services.Implementation.Image_Service: DeleteImage() method executed successfully.";
+               // result.result_set = imageUpdated;
+                result.success = true;
+            }
+            catch (Exception exception)
+            {
+                //SET FAILED RESULT VALUES
+                result.exception = exception;
+                result.userMessage = "We failed to update your information for the image supplied. Please try again.{0}" + exception.Message;
+                result.internalMessage = string.Format("ERROR: LOGIC.Services.Implementation.UpdateImage: AddUpdateImage(): {0}", exception.Message); ;
+                //Success by default is set to false & its always the last value we set in the try block, so we should never need to set it in the catch block.
+            }
+            return result;
+        }
+
+
+        public async Task<Generic_ResultSet<Image_ResultSet>> GetImageByID(Int64 image_id)
+        {
+            Generic_ResultSet<Image_ResultSet> result = new Generic_ResultSet<Image_ResultSet>();
+            try
+            {
+                //GET Applicant FROM DB
+                Image Image = await _crud.Read<Image>(image_id);
+
+                //MANUAL MAPPING OF RETURNED Applicant VALUES TO OUR Applicant_ResultSet
+                Image_ResultSet imageReturned = new Image_ResultSet
+                {
+                    image_id = Image.Image_ID,
+                    album_id = Image.Album_ID,
+                    image_captured_by = Image.Image_Captured_By,
+                    image_tags = Image.Image_Tags,
+                    geolocation = Image.Geolocation
+                };
+
+                //SET SUCCESSFUL RESULT VALUES
+                result.userMessage = string.Format("Applicant {0} was found successfully", imageReturned.image_id);
+                result.internalMessage = "LOGIC.Services.Implementation.Applicant_Service: GetApplicantById() method executed successfully.";
+                result.result_set = imageReturned;
+                result.success = true;
+            }
+            catch (Exception exception)
+            {
+                //SET FAILED RESULT VALUES
+                result.exception = exception;
+                result.userMessage = "We failed find the applicant you are looking for. "+   exception.Message;
+                result.internalMessage = string.Format("ERROR: LOGIC.Services.Implementation.Applicant_Service: AddSingleApplicant(): {0}", exception.Message);
                 //Success by default is set to false & its always the last value we set in the try block, so we should never need to set it in the catch block.
             }
             return result;

@@ -49,9 +49,9 @@ namespace DAL.DataContext
             //COLUMN SETTINGS
             modelBuilder.Entity<User>().Property(user => user.User_Name).IsRequired(true).HasMaxLength(100).HasColumnName("user_name");
             modelBuilder.Entity<User>().Property(user => user.User_Surname).IsRequired(true).HasMaxLength(100).HasColumnName("user_surname");
-            modelBuilder.Entity<User>().Property(user => user.User_Email).IsRequired(true).HasMaxLength(100).HasColumnName("user_passwordhash");
+            modelBuilder.Entity<User>().Property(user => user.User_PasswordHash).IsRequired(true).HasMaxLength(100).HasColumnName("user_passwordhash");
             modelBuilder.Entity<User>().Property(user => user.User_Nickname).IsRequired(true).HasMaxLength(100).HasColumnName("user_nickname");
-            modelBuilder.Entity<User>().Property(user => user.Password_Hash).IsRequired(false).HasMaxLength(250).HasColumnName("user_email");//(no Applicant_)Will be guardians/parents Email
+            modelBuilder.Entity<User>().Property(user => user.User_Email).IsRequired(false).HasMaxLength(250).HasColumnName("user_email");//(no Applicant_)Will be guardians/parents Email
             
             //RelationShips
             modelBuilder.Entity<User>()

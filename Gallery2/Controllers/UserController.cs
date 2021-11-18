@@ -28,7 +28,7 @@ namespace WEB_API.Controllers
         [Route("[action]")]
         public async Task<IActionResult> AddUser(User_Pass_Object user)
         {
-            var result = await _user_Service.AddSingleUser(user.user_name, user.user_surname, user.user_email, user.user_nickname, user.password_hash);
+            var result = await _user_Service.AddSingleUser(user.user_name, user.user_surname, user.user_email, user.user_nickname, user.user_passwordhash);
             switch (result.success)
             {
                 case true:
@@ -39,20 +39,20 @@ namespace WEB_API.Controllers
             }
         }
 
-        //   [HttpGet]
-        //    [Route("[action]")]
-        //   public async Task<IActionResult> GetUserById(int id)
-        //   {
-        //       var result = await _user_Service.GetserById(id);
-        //       switch (result.success)
-        //       {
-        //           case true:
-        //               return Ok(result);
-        //
-        //           case false:
-        //              return StatusCode(500, result);
-        //       }
-        //   }
+           [HttpGet]
+            [Route("[action]")]
+           public async Task<IActionResult> NewLoginUser(String user_nickname, String user_passwordhash)
+           {
+               var result = await _user_Service.LoginUser(user_nickname, user_passwordhash);
+               switch (result.success)
+               {
+                   case true:
+                       return Ok(result);
+        
+                   case false:
+                      return StatusCode(500, result);
+               }
+          }
 
 
         [HttpGet]
@@ -74,7 +74,7 @@ namespace WEB_API.Controllers
         [Route("[action]")]
         public async Task<IActionResult> UpdateUser(UserUpdate_Pass_Object user)
         {
-            var result = await _user_Service.UpdateUser(user.user_id, user.user_name, user.user_surname, user.user_email, user.user_nickname, user.password_hash);
+            var result = await _user_Service.UpdateUser(user.user_id, user.user_name, user.user_surname, user.user_email, user.user_nickname, user.user_passwordhash);
             switch (result.success)
             {
                 case true:

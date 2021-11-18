@@ -8,8 +8,8 @@ namespace LOGIC.Services.Models.Image
 {
     public class Image_ResultSet
     {
-        public int image_id { get; set; }
-        public int album_id { get; set; }
+        public Int64 image_id { get; set; }
+        public Int64 album_id { get; set; }
         public String image_name { get; set; }
         public DateTime image_captured_date { get; set; } //review data type
         public String image_captured_by { get; set; } //entity for photographers?

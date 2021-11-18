@@ -21,7 +21,7 @@ namespace LOGIC.Services.Implementation
         //Refernce to crud functions
         private ICRUD _crud = new CRUD();
 
-        public async Task<Generic_ResultSet<A_Permission_ResultSet>> AddSingleA_Permission(int album_id, int user_id, string a_permission_type)
+        public async Task<Generic_ResultSet<A_Permission_ResultSet>> AddSingleA_Permission(Int64 album_id, Int64 user_id, string a_permission_type)
         {
             Generic_ResultSet<A_Permission_ResultSet> result = new Generic_ResultSet<A_Permission_ResultSet>();
             
@@ -102,7 +102,7 @@ namespace LOGIC.Services.Implementation
             return result;
         }
 
-        public async Task<Generic_ResultSet<A_Permission_ResultSet>> UpdateA_Permission(int a_permission_id, int album_id, int user_id, string a_permission_type)
+        public async Task<Generic_ResultSet<A_Permission_ResultSet>> UpdateA_Permission(Int64 a_permission_id, Int64 album_id, Int64 user_id, string a_permission_type)
         {
             Generic_ResultSet<A_Permission_ResultSet> result = new Generic_ResultSet<A_Permission_ResultSet>();
             try
