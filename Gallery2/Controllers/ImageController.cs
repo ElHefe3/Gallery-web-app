@@ -1,4 +1,5 @@
-﻿using LOGIC.Services.Interfaces;
+﻿using Gallery2.Models.Image;
+using LOGIC.Services.Interfaces;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -68,5 +69,38 @@ namespace WEB_API.Controllers
                     return StatusCode(500, result);
             }
         }
+
+
+        [HttpPost]
+        [Route("[action]")]
+        public async Task<IActionResult> DeleteImage(ImageDelete_Pass_Object image)
+        {
+            var result = await _image_Service.DeleteImage(image.image_id);
+            switch (result.success)
+            {
+                case true:
+                    return Ok(result);
+
+                case false:
+                    return StatusCode(500, result);
+            }
+        }
+
+
+
+           [HttpGet]
+            [Route("[action]")]
+           public async Task<IActionResult> GetImageByID(Int64 id)
+           {
+               var result = await _image_Service.GetImageByID(id);       ////Read
+               switch (result.success)
+               {
+                   case true:
+                       return Ok(result);
+        
+                   case false:
+                      return StatusCode(500, result);
+               }
+           }
     }
 }

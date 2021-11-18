@@ -13,7 +13,7 @@ namespace DAL.Migrations
                 name: "album",
                 columns: table => new
                 {
-                    album_id = table.Column<int>(type: "int", nullable: false)
+                    album_id = table.Column<long>(type: "bigint", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     album_name = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
                     album_description = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: true)
@@ -27,13 +27,13 @@ namespace DAL.Migrations
                 name: "user",
                 columns: table => new
                 {
-                    user_id = table.Column<int>(type: "int", nullable: false)
+                    user_id = table.Column<long>(type: "bigint", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     user_name = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
                     user_surname = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
-                    user_passwordhash = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
+                    user_email = table.Column<string>(type: "nvarchar(250)", maxLength: 250, nullable: true),
                     user_nickname = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
-                    user_email = table.Column<string>(type: "nvarchar(250)", maxLength: 250, nullable: true)
+                    user_passwordhash = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false)
                 },
                 constraints: table =>
                 {
@@ -44,9 +44,9 @@ namespace DAL.Migrations
                 name: "image",
                 columns: table => new
                 {
-                    image_id = table.Column<int>(type: "int", nullable: false)
+                    image_id = table.Column<long>(type: "bigint", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    album_id = table.Column<int>(type: "int", nullable: false),
+                    album_id = table.Column<long>(type: "bigint", nullable: false),
                     image_name = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
                     image_capture_date = table.Column<DateTime>(type: "datetime2", nullable: false),
                     image_captured_by = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: true),
@@ -68,10 +68,10 @@ namespace DAL.Migrations
                 name: "a_permission",
                 columns: table => new
                 {
-                    i_permission_id = table.Column<int>(type: "int", nullable: false)
+                    i_permission_id = table.Column<long>(type: "bigint", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    album_id = table.Column<int>(type: "int", maxLength: 100, nullable: false),
-                    user_id = table.Column<int>(type: "int", maxLength: 100, nullable: false),
+                    album_id = table.Column<long>(type: "bigint", maxLength: 100, nullable: false),
+                    user_id = table.Column<long>(type: "bigint", maxLength: 100, nullable: false),
                     a_permission_type = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false)
                 },
                 constraints: table =>
@@ -93,10 +93,10 @@ namespace DAL.Migrations
                 name: "i_permission",
                 columns: table => new
                 {
-                    i_permission_id = table.Column<int>(type: "int", nullable: false)
+                    i_permission_id = table.Column<long>(type: "bigint", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    image_id = table.Column<int>(type: "int", nullable: false),
-                    user_id = table.Column<int>(type: "int", nullable: false),
+                    image_id = table.Column<long>(type: "bigint", nullable: false),
+                    user_id = table.Column<long>(type: "bigint", nullable: false),
                     i_permission_type = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false)
                 },
                 constraints: table =>

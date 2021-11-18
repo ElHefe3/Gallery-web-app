@@ -21,7 +21,7 @@ namespace LOGIC.Services.Implementation
         //Refernce to crud functions
         private ICRUD _crud = new CRUD();
 
-        public async Task<Generic_ResultSet<User_ResultSet>> AddSingleUser(string user_name, string user_surname, string user_email, string user_nickname, string password_hash) 
+        public async Task<Generic_ResultSet<User_ResultSet>> AddSingleUser(string user_name, string user_surname, string user_email, string user_nickname, string user_passwordhash) 
         {
             Generic_ResultSet<User_ResultSet> result = new Generic_ResultSet<User_ResultSet>();
             try
@@ -68,6 +68,7 @@ namespace LOGIC.Services.Implementation
 
         public async Task<Generic_ResultSet<List<User_ResultSet>>> GetAllUsers()
         {
+            string abc = "";
             Generic_ResultSet<List<User_ResultSet>> result = new Generic_ResultSet<List<User_ResultSet>>();
             try
             {
@@ -83,12 +84,26 @@ namespace LOGIC.Services.Implementation
                         user_surname = dg.User_Surname,
                         user_email = dg.User_Email,
                         user_nickname = dg.User_Nickname,
-                        password_hash = dg.Password_Hash
+                        user_passwordhash = dg.User_PasswordHash
+
+
                     });
                 });
 
+                Users.ForEach(dg =>
+                {
+                    abc = "running";
+                    if (dg.User_Nickname == "bernie")
+                        {
+
+                        abc = "ons het bernie gekry by user_ID " + dg.User_ID.ToString() + "passwordhash " + dg.User_PasswordHash;
+
+                    }
+                });
+
+
                 //SET SUCCESSFUL RESULT VALUES
-                result.userMessage = string.Format("All users obtained successfully");
+                result.userMessage = string.Format("All users obtained successfully" + abc);
                 result.internalMessage = "LOGIC.Services.Implementation.Users_Service: GetAllusers() method executed successfully.";
                 result.success = true;
             }
@@ -103,7 +118,7 @@ namespace LOGIC.Services.Implementation
             return result;
         }
 
-        public async Task<Generic_ResultSet<User_ResultSet>> UpdateUser(int user_id, string user_name, string user_surname, string user_email, string user_nickname, string password_hash) //double check i collection type
+        public async Task<Generic_ResultSet<User_ResultSet>> UpdateUser(Int64 user_id, string user_name, string user_surname, string user_email, string user_nickname, string user_passwordhash) 
         {
             Generic_ResultSet<User_ResultSet> result = new Generic_ResultSet<User_ResultSet>();
             try
@@ -149,5 +164,71 @@ namespace LOGIC.Services.Implementation
             }
             return result;
         }
+
+        //not working yet
+        public async Task<Generic_ResultSet<List<User_ResultSet>>> LoginUser(String user_nickname, String user_passwordhash)
+         {
+            string abc = "";
+            Generic_ResultSet<List<User_ResultSet>> result = new Generic_ResultSet<List<User_ResultSet>>();
+            try
+            {
+                //GET ALL Users
+                List<User> Users = await _crud.ReadAll<User>();
+                //MAP DB USERS RESULTS
+                result.result_set = new List<User_ResultSet>();
+                Users.ForEach(dg => {
+                if ((dg.User_Nickname == user_nickname) && (dg.User_PasswordHash == user_passwordhash))
+                {
+                  //  abc = " ons het bernie gekry by user_ID " + dg.User_ID.ToString() + "passwordhash " + dg.User_PasswordHash;
+                        //only adds if it matches user_nickname and passwordhash
+                        result.result_set.Add(new User_ResultSet
+                        {
+                            user_id = dg.User_ID,
+                            user_name = dg.User_Name,
+                            user_surname = dg.User_Surname,
+                            user_email = dg.User_Email,
+                            user_nickname = dg.User_Nickname,
+                            user_passwordhash = dg.User_PasswordHash
+
+
+                        });
+                    }
+                });
+
+               // Users.ForEach(dg =>
+               // {
+                 //   abc = "running";
+                 //   if ((dg.User_Nickname == user_nickname) && (dg.User_PasswordHash == user_passwordhash))
+                   //     {
+                     //       abc = "ons het bernie gekry by user_ID " + dg.User_ID.ToString() + "passwordhash " + dg.User_PasswordHash;
+                   //     }
+                  //  else
+                  //  {
+                       // result.result_set.Remove()
+                  //  }
+              //  });
+
+
+                //SET SUCCESSFUL RESULT VALUES
+                result.userMessage = string.Format("User "+ user_nickname + " sucessfully logged in" );
+                result.internalMessage = "LOGIC.Services.Implementation.Users_Service: GetAllusers() method executed successfully.";
+                result.success = true;
+            }
+            catch (Exception exception)
+            {
+                //SET FAILED RESULT VALUES
+                result.exception = exception;
+                result.userMessage = "Username or password may be incorrect";
+                result.internalMessage = string.Format("ERROR: LOGIC.Services.Implementation.User_Service: LoginUser(): {0}", exception.Message); ;
+                //Success by default is set to false & its always the last value we set in the try block, so we should never need to set it in the catch block.
+            }
+            return result;
+        }
+
+       
+
+
+
+
     }
 }

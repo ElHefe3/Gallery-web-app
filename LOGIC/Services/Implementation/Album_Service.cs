@@ -98,7 +98,7 @@ namespace LOGIC.Services.Implementation
             return result;
         }
 
-        public async Task<Generic_ResultSet<Album_ResultSet>> UpdateAlbum(int album_id, string album_name, string album_description)
+        public async Task<Generic_ResultSet<Album_ResultSet>> UpdateAlbum(Int64 album_id, string album_name, string album_description)
         {
             Generic_ResultSet<Album_ResultSet> result = new Generic_ResultSet<Album_ResultSet>();
             try

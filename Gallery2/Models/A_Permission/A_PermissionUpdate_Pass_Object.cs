@@ -2,6 +2,6 @@
 {
     public class A_PermissionUpdate_Pass_Object: A_Permission_Pass_Object
     {
-        public int a_permission_id { get; set; }
+        public Int64 a_permission_id { get; set; }
     }
 }

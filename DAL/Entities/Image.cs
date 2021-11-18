@@ -8,8 +8,8 @@ namespace DAL.Entities
 {
     public class Image
     {
-        public int Image_ID { get; set; }
-        public int Album_ID { get; set; }
+        public Int64 Image_ID { get; set; }
+        public Int64 Album_ID { get; set; }
         public String? Image_Name { get; set; }
         public DateTime Image_Captured_Date { get; set; } //review data type
         public String? Image_Captured_By { get; set; } //entity for photographers?

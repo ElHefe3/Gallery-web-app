@@ -21,7 +21,7 @@ namespace LOGIC.Services.Implementation
         //Refernce to crud functions
         private ICRUD _crud = new CRUD();
 
-        public async Task<Generic_ResultSet<I_Permission_ResultSet>> AddSingleI_Permission(int image_id, int user_id, string i_permission_type)
+        public async Task<Generic_ResultSet<I_Permission_ResultSet>> AddSingleI_Permission(Int64 image_id, Int64 user_id, string i_permission_type)
         {
             Generic_ResultSet<I_Permission_ResultSet> result = new Generic_ResultSet<I_Permission_ResultSet>();
             try
@@ -81,7 +81,7 @@ namespace LOGIC.Services.Implementation
                         i_permission_id = dg.I_Permission_ID,
                         image_id = dg.Image_ID,
                         user_id = dg.User_ID,
-                        i_permission_type = dg.I_Permission_Type,
+                        i_permission_type = dg.I_Permission_Type
                                   });
                 });
 
@@ -101,7 +101,7 @@ namespace LOGIC.Services.Implementation
             return result;
         }
 
-        public async Task<Generic_ResultSet<I_Permission_ResultSet>> UpdateI_Permission(int i_permission_id, int image_id, int user_id, string i_permission_type)
+        public async Task<Generic_ResultSet<I_Permission_ResultSet>> UpdateI_Permission(Int64 i_permission_id, Int64 image_id, Int64 user_id, string i_permission_type)
         {
             Generic_ResultSet<I_Permission_ResultSet> result = new Generic_ResultSet<I_Permission_ResultSet>();
             try
@@ -145,5 +145,60 @@ namespace LOGIC.Services.Implementation
             }
             return result;
         }
+
+
+        public async Task<Generic_ResultSet<List<I_Permission_ResultSet>>> IPermissionByUserID(Int64 user_id)
+        {
+            string abc = "";
+            Generic_ResultSet<List<I_Permission_ResultSet>> result = new Generic_ResultSet<List<I_Permission_ResultSet>>();
+            try
+            {
+                //GET ALL Users
+                List<I_Permission> I_Permission = await _crud.ReadAll<I_Permission>();
+                //MAP DB USERS RESULTS
+                result.result_set = new List<I_Permission_ResultSet>();
+                I_Permission.ForEach(dg => {
+                    if (dg.User_ID == user_id) 
+                    {
+                      
+                        //only adds if it matches user_nickname and passwordhash
+                        result.result_set.Add(new I_Permission_ResultSet
+                        {
+                            i_permission_id = dg.I_Permission_ID,
+                            image_id = dg.Image_ID,
+                            user_id = dg.User_ID,
+                            i_permission_type = dg.I_Permission_Type
+
+
+                        });
+                    }
+                });
+
+                //SET SUCCESSFUL RESULT VALUES
+                result.userMessage = string.Format("User " + user_id.ToString() + " image permissions successfully loaded");
+                result.internalMessage = "LOGIC.Services.Implementation.Users_Service: GetAllusers() method executed successfully.";
+                result.success = true;
+            }
+            catch (Exception exception)
+            {
+                //SET FAILED RESULT VALUES
+                result.exception = exception;
+                result.userMessage = "User Image permissions not successfully loaded";
+                result.internalMessage = string.Format("ERROR: LOGIC.Services.Implementation.User_Service: LoginUser(): {0}", exception.Message); ;
+                //Success by default is set to false & its always the last value we set in the try block, so we should never need to set it in the catch block.
+            }
+            return result;
+        }
+
+
+
+
+
+
+
+
+
+
+
     }
 }

@@ -8,12 +8,12 @@ namespace DAL.Entities
 {
     public class User
     {
-        public int User_ID { get; set; }
+        public Int64 User_ID { get; set; }
         public String? User_Name { get; set;}
         public String? User_Surname { get; set; }
         public String? User_Email { get; set;}
         public String? User_Nickname { get; set; }
-        public String? Password_Hash { get; set; } //review data type
+        public String? User_PasswordHash { get; set; } //review data type
 
         public ICollection<I_Permission>? I_Permissions { get; set; }
 
