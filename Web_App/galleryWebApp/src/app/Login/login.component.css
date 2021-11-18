@@ -1,0 +1,11 @@
+.form-container {
+    align-self: center;
+    width: fit-content;
+    padding: 24px;
+    background-color:  #34495e;
+    border-radius: 20px;
+}
+
+label {
+    color: white;
+}

@@ -1,0 +1,19 @@
+<body>
+    <section class="headers parallax--bg">
+        <div class="container">
+            <h1 class="title parallax--box">Sign in
+            </h1>
+            <h2><span>Gallery hosting solution</span></h2>
+        </div>
+    </section>
+
+    <div class="form-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+            <label for="tbxUsername">Username:</label><br>
+            <input type="text" class='form-control' id="tbxUsername" placeholder="username" [ngModel]="currentUser.userNickname"><br>
+            <label for="tbxPassword">Password:</label><br>
+            <input type="password" class='form-control' id="tbxPassword" placeholder="username" [ngModel]="currentUser.userPassword"><br>
+            <button class="btn btn-primary btn-block"  type="button" (click)="SubmitUser()">Log in</button>
+        </form>
+    </div>
+</body>
