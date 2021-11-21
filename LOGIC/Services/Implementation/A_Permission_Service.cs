@@ -146,5 +146,48 @@ namespace LOGIC.Services.Implementation
             }
             return result;
         }
+
+        public async Task<Generic_ResultSet<List<A_Permission_ResultSet>>> APermissionByUserID(Int64 user_id)
+        {
+            string abc = "";
+            Generic_ResultSet<List<A_Permission_ResultSet>> result = new Generic_ResultSet<List<A_Permission_ResultSet>>();
+            try
+            {
+                //GET ALL Users
+                List<A_Permission> A_Permission = await _crud.ReadAll<A_Permission>();
+                //MAP DB USERS RESULTS
+                result.result_set = new List<A_Permission_ResultSet>();
+                A_Permission.ForEach(dg => {
+                    if (dg.User_ID == user_id)
+                    {
+
+                        //only adds if it matches user_nickname and passwordhash
+                        result.result_set.Add(new A_Permission_ResultSet
+                        {
+                            a_permission_id = dg.A_Permission_ID,
+                            album_id = dg.Album_ID,
+                            user_id = dg.User_ID,
+                            a_permission_type = dg.A_Permission_Type
+
+
+                        });
+                    }
+                });
+
+                //SET SUCCESSFUL RESULT VALUES
+                result.userMessage = string.Format("User " + user_id.ToString() + " album permissions successfully loaded");
+                result.internalMessage = "LOGIC.Services.Implementation.Users_Service: GetAllusers() method executed successfully.";
+                result.success = true;
+            }
+            catch (Exception exception)
+            {
+                //SET FAILED RESULT VALUES
+                result.exception = exception;
+                result.userMessage = "User Image permissions not successfully loaded";
+                result.internalMessage = string.Format("ERROR: LOGIC.Services.Implementation.User_Service: LoginUser(): {0}", exception.Message); ;
+                //Success by default is set to false & its always the last value we set in the try block, so we should never need to set it in the catch block.
+            }
+            return result;
+        }
     }
 }

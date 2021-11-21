@@ -15,5 +15,7 @@ namespace LOGIC.Services.Interfaces
         Task<Generic_ResultSet<List<A_Permission_ResultSet>>> GetAllA_Permissions();
 
         Task<Generic_ResultSet<A_Permission_ResultSet>> UpdateA_Permission(Int64 a_permission_id, Int64 album_id, Int64 user_id, string a_permission_type);
+
+        Task<Generic_ResultSet<List<A_Permission_ResultSet>>> APermissionByUserID(Int64 user_id);
     }
 }

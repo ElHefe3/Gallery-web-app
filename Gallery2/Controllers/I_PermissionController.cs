@@ -71,7 +71,7 @@ namespace WEB_API.Controllers
 
         [HttpGet]
         [Route("[action]")]
-        public async Task<IActionResult> NewIPermissionByUserID(int user_id)
+        public async Task<IActionResult> GetIPermissionByUserID(int user_id)
         {
             var result = await _i_permission_Service.IPermissionByUserID(user_id);
             switch (result.success)

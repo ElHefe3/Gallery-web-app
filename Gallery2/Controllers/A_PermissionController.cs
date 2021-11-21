@@ -68,5 +68,21 @@ namespace WEB_API.Controllers
                     return StatusCode(500, result);
             }
         }
+
+
+        [HttpGet]
+        [Route("[action]")]
+        public async Task<IActionResult> GetAPermissionByUserID(int user_id)
+        {
+            var result = await _a_permission_Service.APermissionByUserID(user_id);
+            switch (result.success)
+            {
+                case true:
+                    return Ok(result);
+
+                case false:
+                    return StatusCode(500, result);
+            }
+        }
     }
 }

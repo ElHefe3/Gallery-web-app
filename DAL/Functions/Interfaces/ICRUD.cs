@@ -17,5 +17,7 @@ namespace DAL.Functions.Interfaces
         Task<List<T>> LoginUser<T>(String user_nickname, String password_hash) where T : class;
 
         Task<List<T>> IPermissionByUserID<T>(Int64 userID) where T : class;
+
+        Task<List<T>> APermissionByUserID<T>(Int64 userID) where T : class;
     }
 }

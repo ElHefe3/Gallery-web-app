@@ -6385,23 +6385,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\kobus\\.nuget\\packages\\": {},
+    "C:\\Users\\Bernie Nel\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "X:\\LOGIC\\LOGIC.csproj",
+      "projectUniqueName": "C:\\Users\\Bernie Nel\\Documents\\GitHub\\Gallery-web-app\\LOGIC\\LOGIC.csproj",
       "projectName": "LOGIC",
-      "projectPath": "X:\\LOGIC\\LOGIC.csproj",
-      "packagesPath": "C:\\Users\\kobus\\.nuget\\packages\\",
-      "outputPath": "X:\\LOGIC\\obj\\",
+      "projectPath": "C:\\Users\\Bernie Nel\\Documents\\GitHub\\Gallery-web-app\\LOGIC\\LOGIC.csproj",
+      "packagesPath": "C:\\Users\\Bernie Nel\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Bernie Nel\\Documents\\GitHub\\Gallery-web-app\\LOGIC\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\kobus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Bernie Nel\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -6416,8 +6416,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "X:\\DAL\\DAL.csproj": {
-              "projectPath": "X:\\DAL\\DAL.csproj"
+            "C:\\Users\\Bernie Nel\\Documents\\GitHub\\Gallery-web-app\\DAL\\DAL.csproj": {
+              "projectPath": "C:\\Users\\Bernie Nel\\Documents\\GitHub\\Gallery-web-app\\DAL\\DAL.csproj"
             }
           }
         }

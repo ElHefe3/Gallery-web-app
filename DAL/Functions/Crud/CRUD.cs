@@ -86,6 +86,23 @@ namespace DAL.Functions.Crud
         }
 
 
+        public async Task<List<T>> APermissionByUserID<T>(Int64 userID) where T : class
+        {
+            try
+            {
+                using (DatabaseContext context = new DatabaseContext(DatabaseContext.Options.DatabaseOptions))
+                {
+                    var result = await context.Set<T>().ToListAsync();
+                    return result;
+                }
+            }
+            catch
+            {
+                throw;
+            }
+        }
+
+
 
 
         public async Task<T> Read<T>(Int64 entityId) where T : class
