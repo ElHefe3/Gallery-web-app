@@ -6,17 +6,26 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using DAL.Entities;
 
+
 namespace DAL.DataContext
 {
     public class DatabaseContext : DbContext
     {
         public class OptionsBuild
         {
+
+
+
+
             public OptionsBuild()
             {
                 settings = new AppConfiguration();
                 OptionsBuilder = new DbContextOptionsBuilder<DatabaseContext>();
-                OptionsBuilder.UseSqlServer(settings.SqlConnectionString);
+                OptionsBuilder.UseSqlServer(settings.SqlConnectionString, builder =>
+                {
+                    builder.EnableRetryOnFailure(5, TimeSpan.FromSeconds(10), null);
+                });
+
                 DatabaseOptions = OptionsBuilder.Options;
             }
 

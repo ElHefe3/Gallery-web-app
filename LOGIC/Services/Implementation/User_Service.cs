@@ -90,16 +90,7 @@ namespace LOGIC.Services.Implementation
                     });
                 });
 
-                Users.ForEach(dg =>
-                {
-                    abc = "running";
-                    if (dg.User_Nickname == "bernie")
-                        {
 
-                        abc = "ons het bernie gekry by user_ID " + dg.User_ID.ToString() + "passwordhash " + dg.User_PasswordHash;
-
-                    }
-                });
 
 
                 //SET SUCCESSFUL RESULT VALUES
@@ -111,7 +102,7 @@ namespace LOGIC.Services.Implementation
             {
                 //SET FAILED RESULT VALUES
                 result.exception = exception;
-                result.userMessage = "We failed fetch all the required users from the database.";
+                result.userMessage = "We failed fetch all the required users from the database." + exception.Message;
                 result.internalMessage = string.Format("ERROR: LOGIC.Services.Implementation.User_Service: GetAllUsers(): {0}", exception.Message); ;
                 //Success by default is set to false & its always the last value we set in the try block, so we should never need to set it in the catch block.
             }
