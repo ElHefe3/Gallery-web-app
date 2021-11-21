@@ -157,7 +157,7 @@ namespace DAL.DataContext
             modelBuilder.Entity<A_Permission>().ToTable("a_permission");
             //Primary Key & Identity Column
             modelBuilder.Entity<A_Permission>().HasKey(a_p => a_p.A_Permission_ID);
-            modelBuilder.Entity<A_Permission>().Property(a_p => a_p.A_Permission_ID).UseIdentityColumn(1, 1).IsRequired().HasColumnName("i_permission_id");
+            modelBuilder.Entity<A_Permission>().Property(a_p => a_p.A_Permission_ID).UseIdentityColumn(1, 1).IsRequired().HasColumnName("a_permission_id");
             //COLUMN SETTINGS
             modelBuilder.Entity<A_Permission>().Property(a_p => a_p.Album_ID).IsRequired(true).HasMaxLength(100).HasColumnName("album_id");
             modelBuilder.Entity<A_Permission>().Property(a_p => a_p.User_ID).IsRequired(true).HasMaxLength(100).HasColumnName("user_id");

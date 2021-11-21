@@ -68,7 +68,7 @@ namespace DAL.Migrations
                 name: "a_permission",
                 columns: table => new
                 {
-                    i_permission_id = table.Column<long>(type: "bigint", nullable: false)
+                    a_permission_id = table.Column<long>(type: "bigint", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     album_id = table.Column<long>(type: "bigint", maxLength: 100, nullable: false),
                     user_id = table.Column<long>(type: "bigint", maxLength: 100, nullable: false),
@@ -76,7 +76,7 @@ namespace DAL.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_a_permission", x => x.i_permission_id);
+                    table.PrimaryKey("PK_a_permission", x => x.a_permission_id);
                     table.ForeignKey(
                         name: "FK_a_permission_album_album_id",
                         column: x => x.album_id,

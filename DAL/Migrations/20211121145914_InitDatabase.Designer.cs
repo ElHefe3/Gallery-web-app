@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DAL.Migrations
 {
     [DbContext(typeof(DatabaseContext))]
-    [Migration("20211118055059_InitDatabase")]
+    [Migration("20211121145914_InitDatabase")]
     partial class InitDatabase
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -29,7 +29,7 @@ namespace DAL.Migrations
                     b.Property<long>("A_Permission_ID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("bigint")
-                        .HasColumnName("i_permission_id");
+                        .HasColumnName("a_permission_id");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("A_Permission_ID"), 1L, 1);
 

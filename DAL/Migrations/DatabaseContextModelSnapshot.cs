@@ -27,7 +27,7 @@ namespace DAL.Migrations
                     b.Property<long>("A_Permission_ID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("bigint")
-                        .HasColumnName("i_permission_id");
+                        .HasColumnName("a_permission_id");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("A_Permission_ID"), 1L, 1);
 
