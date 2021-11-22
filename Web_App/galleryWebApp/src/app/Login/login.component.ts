@@ -10,12 +10,32 @@ import { UserService } from '../services/user.service';
 })
 export class LoginComponent implements OnInit {
   currentUser: User = new User();
+  userResults: UserResult = new UserResult();
+  load: string = 'no-show';
+  disabled: string = '';
   constructor(private userService:UserService ) { }
 
   async ngOnInit(): Promise<void> {
+    
   }
 
-  async SubmitUser() {
+  async LogUserIn(): Promise<void> {
+    this.userResults.result_set=[];
+    var t = await this.userService
+      .UserLogin()
+      .then((data) => {
+        if(data.success) {
+          this.userResults = data;
+        }else{
+          alert(data.userMessage);
+        }
+      })
+      .catch((error) => {
+        alert(error);
+      });
+  }
+
+/*   async SubmitUser() {
     let result = new UserResult();
     await this.userService
       .UserLogin(this.currentUser)
@@ -29,5 +49,5 @@ export class LoginComponent implements OnInit {
         }
         this.currentUser = new User();
       })
-  }
+  } */
 }

@@ -10,10 +10,10 @@
     <div class="form-popup" id="myForm">
         <form action="/action_page.php" class="form-container">
             <label for="tbxUsername">Username:</label><br>
-            <input type="text" class='form-control' id="tbxUsername" placeholder="username" [ngModel]="currentUser.userNickname"><br>
+            <input class='form-control' id="tbxUsername" placeholder="username" [ngModel]="currentUser.userNickname" name="userNickname"><br>
             <label for="tbxPassword">Password:</label><br>
-            <input type="password" class='form-control' id="tbxPassword" placeholder="username" [ngModel]="currentUser.userPassword"><br>
-            <button class="btn btn-primary btn-block"  type="button" (click)="SubmitUser()">Log in</button>
+            <input type="password" class='form-control' id="tbxPassword" placeholder="username" [ngModel]="currentUser.userPassword" name="userPassword"><br>
+            <button class="btn btn-primary btn-block"  type="button" (click)="LogUserIn()">Log in</button>
         </form>
     </div>
 </body>

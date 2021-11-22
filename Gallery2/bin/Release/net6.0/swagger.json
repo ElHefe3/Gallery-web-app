@@ -1,0 +1,652 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "WebGallery",
+    "version": "v1"
+  },
+  "paths": {
+    "/api/A_Permission/AddA_Permission": {
+      "post": {
+        "tags": [
+          "A_Permission"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/A_Permission_Pass_Object"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/A_Permission/GetAllA_Permissions": {
+      "get": {
+        "tags": [
+          "A_Permission"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/A_Permission/UpdateA_Permission": {
+      "post": {
+        "tags": [
+          "A_Permission"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/A_PermissionUpdate_Pass_Object"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/A_Permission/GetAPermissionByUserID": {
+      "get": {
+        "tags": [
+          "A_Permission"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "user_id",
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Album/AddAlbum": {
+      "post": {
+        "tags": [
+          "Album"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/Album_Pass_Object"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Album/GetAllAlbums": {
+      "get": {
+        "tags": [
+          "Album"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Album/UpdateAlbum": {
+      "post": {
+        "tags": [
+          "Album"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/AlbumUpdate_Pass_Object"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/I_Permission/AddI_Permission": {
+      "post": {
+        "tags": [
+          "I_Permission"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/I_Permission_Pass_Object"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/I_Permission/GetAllI_Permissions": {
+      "get": {
+        "tags": [
+          "I_Permission"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/I_Permission/UpdateI_Permission": {
+      "post": {
+        "tags": [
+          "I_Permission"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/I_PermissionUpdate_Pass_Object"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/I_Permission/GetIPermissionByUserID": {
+      "get": {
+        "tags": [
+          "I_Permission"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "user_id",
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Image/AddImage": {
+      "post": {
+        "tags": [
+          "Image"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/Image_Pass_Object"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Image/GetAllImages": {
+      "get": {
+        "tags": [
+          "Image"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Image/UpdateImage": {
+      "post": {
+        "tags": [
+          "Image"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/ImageUpdate_Pass_Object"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Image/DeleteImage": {
+      "post": {
+        "tags": [
+          "Image"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/ImageDelete_Pass_Object"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Image/GetImageByID": {
+      "get": {
+        "tags": [
+          "Image"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "id",
+            "type": "integer",
+            "format": "int64"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/User/AddUser": {
+      "post": {
+        "tags": [
+          "User"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/User_Pass_Object"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/User/NewLoginUser": {
+      "get": {
+        "tags": [
+          "User"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "user_nickname",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "user_passwordhash",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/User/GetAllUsers": {
+      "get": {
+        "tags": [
+          "User"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/User/UpdateUser": {
+      "post": {
+        "tags": [
+          "User"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/UserUpdate_Pass_Object"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "A_Permission_Pass_Object": {
+      "type": "object",
+      "properties": {
+        "album_id": {
+          "format": "int64",
+          "type": "integer"
+        },
+        "user_id": {
+          "format": "int64",
+          "type": "integer"
+        },
+        "a_permission_type": {
+          "type": "string"
+        }
+      }
+    },
+    "A_PermissionUpdate_Pass_Object": {
+      "type": "object",
+      "properties": {
+        "album_id": {
+          "format": "int64",
+          "type": "integer"
+        },
+        "user_id": {
+          "format": "int64",
+          "type": "integer"
+        },
+        "a_permission_type": {
+          "type": "string"
+        },
+        "a_permission_id": {
+          "format": "int64",
+          "type": "integer"
+        }
+      }
+    },
+    "Album_Pass_Object": {
+      "type": "object",
+      "properties": {
+        "album_name": {
+          "type": "string"
+        },
+        "album_description": {
+          "type": "string"
+        }
+      }
+    },
+    "AlbumUpdate_Pass_Object": {
+      "type": "object",
+      "properties": {
+        "album_name": {
+          "type": "string"
+        },
+        "album_description": {
+          "type": "string"
+        },
+        "album_id": {
+          "format": "int64",
+          "type": "integer"
+        }
+      }
+    },
+    "I_Permission_Pass_Object": {
+      "type": "object",
+      "properties": {
+        "image_id": {
+          "format": "int64",
+          "type": "integer"
+        },
+        "user_id": {
+          "format": "int64",
+          "type": "integer"
+        },
+        "i_permission_type": {
+          "type": "string"
+        }
+      }
+    },
+    "I_PermissionUpdate_Pass_Object": {
+      "type": "object",
+      "properties": {
+        "image_id": {
+          "format": "int64",
+          "type": "integer"
+        },
+        "user_id": {
+          "format": "int64",
+          "type": "integer"
+        },
+        "i_permission_type": {
+          "type": "string"
+        },
+        "i_permission_id": {
+          "format": "int64",
+          "type": "integer"
+        }
+      }
+    },
+    "Image_Pass_Object": {
+      "type": "object",
+      "properties": {
+        "album_id": {
+          "format": "int64",
+          "type": "integer"
+        },
+        "image_name": {
+          "type": "string"
+        },
+        "image_captured_date": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "image_captured_by": {
+          "type": "string"
+        },
+        "image_tags": {
+          "type": "string"
+        },
+        "geolocation": {
+          "type": "string"
+        },
+        "other_metadata": {
+          "type": "string"
+        }
+      }
+    },
+    "ImageDelete_Pass_Object": {
+      "type": "object",
+      "properties": {
+        "image_id": {
+          "format": "int64",
+          "type": "integer"
+        }
+      }
+    },
+    "ImageUpdate_Pass_Object": {
+      "type": "object",
+      "properties": {
+        "album_id": {
+          "format": "int64",
+          "type": "integer"
+        },
+        "image_name": {
+          "type": "string"
+        },
+        "image_captured_date": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "image_captured_by": {
+          "type": "string"
+        },
+        "image_tags": {
+          "type": "string"
+        },
+        "geolocation": {
+          "type": "string"
+        },
+        "other_metadata": {
+          "type": "string"
+        },
+        "image_id": {
+          "format": "int64",
+          "type": "integer"
+        }
+      }
+    },
+    "User_Pass_Object": {
+      "type": "object",
+      "properties": {
+        "user_name": {
+          "type": "string"
+        },
+        "user_surname": {
+          "type": "string"
+        },
+        "user_email": {
+          "type": "string"
+        },
+        "user_nickname": {
+          "type": "string"
+        },
+        "user_passwordhash": {
+          "type": "string"
+        }
+      }
+    },
+    "UserUpdate_Pass_Object": {
+      "type": "object",
+      "properties": {
+        "user_name": {
+          "type": "string"
+        },
+        "user_surname": {
+          "type": "string"
+        },
+        "user_email": {
+          "type": "string"
+        },
+        "user_nickname": {
+          "type": "string"
+        },
+        "user_passwordhash": {
+          "type": "string"
+        },
+        "user_id": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    }
+  }
+}

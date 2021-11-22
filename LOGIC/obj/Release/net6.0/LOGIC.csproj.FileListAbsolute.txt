@@ -1,0 +1,15 @@
+X:\LOGIC\bin\Release\net6.0\LOGIC.deps.json
+X:\LOGIC\bin\Release\net6.0\LOGIC.dll
+X:\LOGIC\bin\Release\net6.0\ref\LOGIC.dll
+X:\LOGIC\bin\Release\net6.0\LOGIC.pdb
+X:\LOGIC\bin\Release\net6.0\DAL.dll
+X:\LOGIC\bin\Release\net6.0\DAL.pdb
+X:\LOGIC\obj\Release\net6.0\LOGIC.csproj.AssemblyReference.cache
+X:\LOGIC\obj\Release\net6.0\LOGIC.GeneratedMSBuildEditorConfig.editorconfig
+X:\LOGIC\obj\Release\net6.0\LOGIC.AssemblyInfoInputs.cache
+X:\LOGIC\obj\Release\net6.0\LOGIC.AssemblyInfo.cs
+X:\LOGIC\obj\Release\net6.0\LOGIC.csproj.CoreCompileInputs.cache
+X:\LOGIC\obj\Release\net6.0\LOGIC.csproj.CopyComplete
+X:\LOGIC\obj\Release\net6.0\LOGIC.dll
+X:\LOGIC\obj\Release\net6.0\ref\LOGIC.dll
+X:\LOGIC\obj\Release\net6.0\LOGIC.pdb

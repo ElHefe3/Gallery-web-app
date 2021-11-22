@@ -1,0 +1,14 @@
+X:\DAL\bin\Release\net6.0\DAL.deps.json
+X:\DAL\bin\Release\net6.0\DAL.runtimeconfig.json
+X:\DAL\bin\Release\net6.0\DAL.dll
+X:\DAL\bin\Release\net6.0\ref\DAL.dll
+X:\DAL\bin\Release\net6.0\DAL.pdb
+X:\DAL\obj\Release\net6.0\DAL.csproj.AssemblyReference.cache
+X:\DAL\obj\Release\net6.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+X:\DAL\obj\Release\net6.0\DAL.AssemblyInfoInputs.cache
+X:\DAL\obj\Release\net6.0\DAL.AssemblyInfo.cs
+X:\DAL\obj\Release\net6.0\DAL.csproj.CoreCompileInputs.cache
+X:\DAL\obj\Release\net6.0\DAL.dll
+X:\DAL\obj\Release\net6.0\ref\DAL.dll
+X:\DAL\obj\Release\net6.0\DAL.pdb
+X:\DAL\obj\Release\net6.0\DAL.genruntimeconfig.cache

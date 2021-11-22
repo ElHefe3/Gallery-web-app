@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {HttpClientModule} from '@angular/common/http';
-import { ImageComponent } from './image/image.component';
+import { ImageComponent } from './images/image.component';
 import { RouterModule } from '@angular/router';
 import { AlbumComponent } from './album/album.component';
 import { LoginComponent } from './login/login.component';
