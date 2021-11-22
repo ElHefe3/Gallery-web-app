@@ -23,8 +23,9 @@ import {MatDialogModule} from '@angular/material/dialog';
     FormsModule,
     RouterModule.forRoot([
       {path: '',component: LoginComponent, pathMatch: 'full'},
-      {path: 'album', component: ImageComponent },
-      {path: 'image', component: ImageComponent }
+      {path: 'album', component: AlbumComponent },
+      {path: 'image', component: ImageComponent },
+      {path: "login", component: LoginComponent}
     ]),
   ],
   providers: [],
